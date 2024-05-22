@@ -2,3 +2,5 @@ streamlit
 pandas
 geopandas
 folium
+streamlit_folium
+pip install -r requirements.txt
