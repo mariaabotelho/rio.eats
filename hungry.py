@@ -44,7 +44,7 @@ st.write(f"Número de registros após remover NaNs: {len(data)}")
 # Criar um filtro para o tipo de culinária
 st.write("Criando filtro para tipos de culinária...")
 opcoes_culinaria = data['CULINARIA'].unique()
-culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default=opcoes_culinaria)
+culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default= opcoes_culinaria[:3])
 
 # Filtrar dados com base nos tipos de culinária selecionados
 st.write("Filtrando dados com base nos tipos de culinária selecionados...")
