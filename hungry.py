@@ -1,6 +1,7 @@
 import streamlit as st
 st.title("rio eats")
 
+import streamlit as st
 import pandas as pd
 import folium
 from folium.plugins import MarkerCluster
@@ -36,4 +37,5 @@ for idx, row in dados_filtrados.iterrows():
 
 # Exibir mapa
 st_folium(m, width=700, height=500)
+
 
