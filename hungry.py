@@ -1,7 +1,6 @@
 import streamlit as st
 st.title("rio eats")
 
-
 import pandas as pd
 import folium
 from folium.plugins import MarkerCluster
@@ -13,6 +12,9 @@ try:
     data2 = pd.read_excel('OFICIAL GEO DUO GOURMET.xlsx')
 except FileNotFoundError as e:
     st.error(f"Erro ao carregar os arquivos: {e}")
+    st.stop()
+except ImportError as e:
+    st.error(f"Erro de importação: {e}. Certifique-se de que o pacote 'openpyxl' está instalado.")
     st.stop()
 
 # Padronizar nomes das colunas
