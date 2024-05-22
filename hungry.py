@@ -1,5 +1,11 @@
 import streamlit as st
 st.title('Rio Eats')
+with st.sidebar:
+  st.header('Rio Eats')
+  st.write('Seu aplicativo da dicas para restaurantes')
+  st.caption('Criado por Luaninha, Julinha e Mary')
+
+st.write('Nosso aplicativo tem o foco de não te deixar passando fome ')
 st.image('rio eats.jpg')
 
 import pandas as pd
