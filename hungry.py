@@ -35,7 +35,6 @@ data['longitude'] = data['longitude'].astype(str).str.replace(',', '.').astype(f
 data = data.dropna(subset=['latitude', 'longitude'])
 
 # Criar um filtro para o tipo de culinária
-st.write("Criando filtro para tipos de culinária...")
 opcoes_culinaria = data['CULINARIA'].unique()
 culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default= opcoes_culinaria[:3])
 
