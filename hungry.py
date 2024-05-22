@@ -1,15 +1,19 @@
 import streamlit as st
 st.title("rio eats")
 
-import streamlit as st
+
 import pandas as pd
 import folium
 from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
 
 # Carregar dados
-data1 = pd.read_excel('/mnt/data/OFICIAL GEO LULU E JULIA.xlsx')
-data2 = pd.read_excel('/mnt/data/OFICIAL GEO DUO GOURMET.xlsx')
+try:
+    data1 = pd.read_excel('OFICIAL GEO LULU E JULIA.xlsx')
+    data2 = pd.read_excel('OFICIAL GEO DUO GOURMET.xlsx')
+except FileNotFoundError as e:
+    st.error(f"Erro ao carregar os arquivos: {e}")
+    st.stop()
 
 # Padronizar nomes das colunas
 data1.columns = ['NOME', 'BAIRRO', 'ENDERECO', 'CULINARIA', 'endereco_completo', 'latitude', 'longitude']
@@ -17,6 +21,10 @@ data2.columns = ['NOME', 'ENDERECO', 'BAIRRO', 'CULINARIA', 'endereco_completo',
 
 # Combinar dados
 data = pd.concat([data1, data2], ignore_index=True)
+
+# Substituir vírgulas por pontos nas colunas de latitude e longitude
+data['latitude'] = data['latitude'].astype(str).str.replace(',', '.').astype(float)
+data['longitude'] = data['longitude'].astype(str).str.replace(',', '.').astype(float)
 
 # Criar um filtro para o tipo de culinária
 opcoes_culinaria = data['CULINARIA'].unique()
@@ -37,5 +45,3 @@ for idx, row in dados_filtrados.iterrows():
 
 # Exibir mapa
 st_folium(m, width=700, height=500)
-
-
