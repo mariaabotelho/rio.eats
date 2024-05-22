@@ -10,10 +10,8 @@ from streamlit_folium import st_folium
 
 # Carregar dados
 try:
-    st.write("Carregando dados...")
     data1 = pd.read_excel('OFICIAL GEO LULU E JULIA.xlsx')
     data2 = pd.read_excel('OFICIAL GEO DUO GOURMET.xlsx')
-    st.write("Dados carregados com sucesso!")
 except FileNotFoundError as e:
     st.error(f"Erro ao carregar os arquivos: {e}")
     st.stop()
