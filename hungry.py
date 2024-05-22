@@ -56,3 +56,8 @@ for idx, row in dados_filtrados.iterrows():
 # Exibir mapa
 st_folium(m, width=700, height=500)
 
+# Exibe info dos restaurantes
+for idx, row in dados_filtrados.iterrows():
+    with st.expander(row['NOME']):
+        st.markdown(f'**Endereço**: {row['ENDERECO']}')
+
