@@ -4,4 +4,11 @@ geopandas
 folium
 streamlit_folium
 openpyxl
+wordcloud
+requests
+matplotlib
+numpy
+beautifulsoup4
+networkx
+st-gsheets-connection
 
