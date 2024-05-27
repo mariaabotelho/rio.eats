@@ -41,17 +41,6 @@ def mostrar_perfil():
         st.write("4. Casa Tua Cocina")
         st.write("5. Paris 6")
 
-# Título com a imagem ao lado
-st.markdown(
-    f"""
-    <div style="display: flex; align-items: center;">
-        <h1 style="margin-right: 10px;">RIO EATS</h1>
-        <img src="{image_url}" width="90">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
 # Barra lateral
 with st.sidebar:
     st.header('Rio Eats')
@@ -65,6 +54,17 @@ with st.sidebar:
 if pagina == "Perfil":
     mostrar_perfil()
 else:
+    # Título com a imagem ao lado
+    st.markdown(
+        f"""
+        <div style="display: flex; align-items: center;">
+            <h1 style="margin-right: 10px;">RIO EATS</h1>
+            <img src="{image_url}" width="90">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
     st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
 
     # Carregar dados diretamente do CSV limpo com estrelas
@@ -95,7 +95,3 @@ else:
         with st.expander(row['NOME']):
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
-
- 
-    
-  
