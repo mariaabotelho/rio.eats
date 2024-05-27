@@ -50,7 +50,7 @@ def mostrar_perfil():
             st.image("casa tua cocina.jpg", use_column_width=True)
         
         # Widget para capturar imagem da webcam
-        picture = st.camera_input("Tire uma foto")
+        picture = st.camera_input("HMM PARECE ESTAR GOSTOSO... TIRE UMA FOTO PARA REGISTRAR SUA COMIDA!")
         
         # Botão para salvar a imagem capturada
         if picture:
