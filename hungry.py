@@ -1,13 +1,11 @@
 import streamlit as st
 import pandas as pd
-import folium  # Mapa
-from folium.plugins import MarkerCluster  # Marcadores
+import folium
+from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
 from streamlit_custom_notification_box import custom_notification_box
-from PIL import Image
-import numpy as np
 
-# URL direta para a imagem do Cristo no GitHub
+# URLs das imagens no GitHub
 image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/cristinho%202.jpg"
 profile_image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/matheuss.jpg"
 logo_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/rio%20eats.jpg"
@@ -115,8 +113,6 @@ with st.sidebar:
     st.header('Rio Eats')
     st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
     st.caption('Criado por Maria Botelho, Julia Frazão e Luana Pinheiro')
-    
-
 
 if pagina == "Perfil":
     mostrar_perfil()
@@ -165,3 +161,4 @@ else:
         with st.expander(row['NOME']):
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
+
