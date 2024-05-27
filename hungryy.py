@@ -27,6 +27,22 @@ def mostrar_perfil():
         """,
         unsafe_allow_html=True
     )
+    st.markdown(
+        f"""
+        <div style="position: relative; display: inline-block;">
+            <span>Nível Bronze</span>
+            <span style="visibility: hidden; width: 200px; background-color: #f9f9f9; color: #333; text-align: center; border-radius: 5px; padding: 5px 0; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -100px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);">
+                Nível Bronze: Esse usuário já avaliou entre 1 e 20 restaurantes.
+            </span>
+        </div>
+        <style>
+            div:hover > span:last-child {
+                visibility: visible;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     st.write("""
         Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?
     """)
@@ -50,7 +66,7 @@ def mostrar_perfil():
             st.image("casa tua cocina.jpg", use_column_width=True)
         
         # Widget para capturar imagem da webcam
-        picture = st.camera_input("HMM PARECE ESTAR GOSTOSO... TIRE UMA FOTO PARA REGISTRAR SUA COMIDA!")
+        picture = st.camera_input("Hmm parece estar gostoso.. Tire uma foto da sua comida para registrar!")
         
         # Botão para salvar a imagem capturada
         if picture:
@@ -110,14 +126,13 @@ def exibir_notificacao():
 
 # Barra lateral
 with st.sidebar:
-     # Link para a seção de perfil
-    pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
     st.image(logo_url, use_column_width=True)
     st.header('Rio Eats')
-    st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
-    st.caption('Criado por Maria Botelho, Julia Frazão e Luana Pinheiro')
+    st.write('O site que vai ajudar a achar o restaurante mais pertinho de você')
+    st.caption('Criado por Luaninha, Julinha e Mary')
     
-   
+    # Link para a seção de perfil
+    pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
 
 if pagina == "Perfil":
     mostrar_perfil()
