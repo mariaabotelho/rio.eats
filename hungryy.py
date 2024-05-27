@@ -110,13 +110,14 @@ def exibir_notificacao():
 
 # Barra lateral
 with st.sidebar:
+     # Link para a seção de perfil
+    pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
     st.image(logo_url, use_column_width=True)
     st.header('Rio Eats')
     st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
     st.caption('Criado por Maria Botelho, Julia Frazão e Luana Pinheiro')
     
-    # Link para a seção de perfil
-    pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
+   
 
 if pagina == "Perfil":
     mostrar_perfil()
