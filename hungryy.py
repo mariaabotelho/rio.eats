@@ -112,7 +112,7 @@ def exibir_notificacao():
 with st.sidebar:
     st.image(logo_url, use_column_width=True)
     st.header('Rio Eats')
-    st.write('O site que vai ajudar a achar o restaurante mais pertinho de você')
+    st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
     st.caption('Criado por Luaninha, Julinha e Mary')
     
     # Link para a seção de perfil
