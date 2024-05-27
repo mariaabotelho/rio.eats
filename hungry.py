@@ -10,14 +10,13 @@ with st.sidebar:
     st.header('Rio Eats')
     st.write('Seu aplicativo da dicas para restaurantes')
     st.caption('Criado por Luaninha, Julinha e Mary')
-    st.image('rio eats.jpg')
 
-st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
-
+st.write('Nosso aplicativo tem o foco de não te deixar passando fome')
+st.image('rio eats.jpg')
 
 # Carregar dados diretamente do CSV limpo
 try:
-    data = pd.read_csv('restaurantes_final.csv')
+    data = pd.read_csv('restaurantes_final_limpo.csv')
 except FileNotFoundError as e:
     st.error(f"Erro ao carregar o arquivo: {e}")
     st.stop()
@@ -49,5 +48,4 @@ st_folium(m, width=700, height=500)
 for idx, row in dados_filtrados.iterrows():
     with st.expander(row['NOME']):
         st.markdown(f"**Endereço**: {row['ENDERECO']}")
-
 
