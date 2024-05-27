@@ -3,6 +3,7 @@ import pandas as pd
 import folium  # Mapa
 from folium.plugins import MarkerCluster  # Marcadores
 from streamlit_folium import st_folium
+import time
 
 # URL direta para a imagem do Cristo no GitHub
 image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/cristinho%202.jpg"
@@ -14,7 +15,7 @@ def mostrar_perfil():
         f"""
         <div style="display: flex; align-items: center;">
             <h1 style="margin-right: 10px;">Teteu Pestana</h1>
-            <img src="{profile_image_url}" width="120">
+            <img src="{profile_image_url}" width="100">
         </div>
         """,
         unsafe_allow_html=True
@@ -103,3 +104,16 @@ else:
         with st.expander(row['NOME']):
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
+
+# Exibir notificações temporárias
+placeholder = st.empty()
+
+with placeholder.container():
+    st.info("Eurico Comilão te adicionou como amigo")
+    time.sleep(3)
+    placeholder.empty()
+
+with placeholder.container():
+    st.success("Jojo curtiu sua publicação")
+    time.sleep(3)
+    placeholder.empty()
