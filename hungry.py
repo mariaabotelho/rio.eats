@@ -8,7 +8,7 @@ from streamlit_folium import st_folium
 st.title('RIO EATS')
 with st.sidebar:
     st.header('Rio Eats')
-    st.write('Seu aplicativo da dicas para restaurantes')
+    st.write('O site que vai ajudar a achar o restaurante mais pertinho de você')
     st.caption('Criado por Luaninha, Julinha e Mary')
     st.image('rio eats.jpg')
 
