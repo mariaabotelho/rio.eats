@@ -5,14 +5,15 @@ from folium.plugins import MarkerCluster  # Marcadores
 from streamlit_folium import st_folium
 
 # Título e barra lateral
-st.title('Rio Eats')
+st.title('RIO EATS')
 with st.sidebar:
     st.header('Rio Eats')
     st.write('Seu aplicativo da dicas para restaurantes')
     st.caption('Criado por Luaninha, Julinha e Mary')
+    st.image('rio eats.jpg')
 
-st.write('Nosso aplicativo tem o foco de não te deixar passando fome')
-st.image('rio eats.jpg')
+st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
+
 
 # Carregar dados diretamente do CSV limpo
 try:
