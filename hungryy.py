@@ -55,36 +55,38 @@ with st.sidebar:
     st.image('rio eats.jpg')
     
     # Link para a seção de perfil
-    if st.button("Perfil"):
-        mostrar_perfil()
+    pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
 
-st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
+if pagina == "Perfil":
+    mostrar_perfil()
+else:
+    st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
 
-# Carregar dados diretamente do CSV limpo com estrelas
-data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
+    # Carregar dados diretamente do CSV limpo com estrelas
+    data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
 
-# Criar um filtro para o tipo de culinária
-opcoes_culinaria = data['CULINARIA'].unique()
-culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default=opcoes_culinaria[:3])
+    # Criar um filtro para o tipo de culinária
+    opcoes_culinaria = data['CULINARIA'].unique()
+    culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default=opcoes_culinaria[:3])
 
-# Filtrar dados com base nos tipos de culinária selecionados
-dados_filtrados = data[data['CULINARIA'].isin(culinaria_selecionada)]
+    # Filtrar dados com base nos tipos de culinária selecionados
+    dados_filtrados = data[data['CULINARIA'].isin(culinaria_selecionada)]
 
-# Criar mapa
-m = folium.Map(location=[dados_filtrados['latitude'].mean(), dados_filtrados['longitude'].mean()], zoom_start=12)
-marker_cluster = MarkerCluster().add_to(m)
+    # Criar mapa
+    m = folium.Map(location=[dados_filtrados['latitude'].mean(), dados_filtrados['longitude'].mean()], zoom_start=12)
+    marker_cluster = MarkerCluster().add_to(m)
 
-# Adicionar marcadores ao mapa
-for idx, row in dados_filtrados.iterrows():
-    folium.Marker(location=[row['latitude'], row['longitude']],
-                  popup=f"{row['NOME']} - {row['CULINARIA']}",
-                  icon=folium.Icon(color="blue", icon="info-sign")).add_to(marker_cluster)
+    # Adicionar marcadores ao mapa
+    for idx, row in dados_filtrados.iterrows():
+        folium.Marker(location=[row['latitude'], row['longitude']],
+                      popup=f"{row['NOME']} - {row['CULINARIA']}",
+                      icon=folium.Icon(color="blue", icon="info-sign")).add_to(marker_cluster)
 
-# Exibir mapa
-st_folium(m, width=700, height=500)
+    # Exibir mapa
+    st_folium(m, width=700, height=500)
 
-# Exibe info dos restaurantes
-for idx, row in dados_filtrados.iterrows():
-    with st.expander(row['NOME']):
-        st.markdown(f"**Endereço**: {row['ENDERECO']}")
-        st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
+    # Exibe info dos restaurantes
+    for idx, row in dados_filtrados.iterrows():
+        with st.expander(row['NOME']):
+            st.markdown(f"**Endereço**: {row['ENDERECO']}")
+            st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
