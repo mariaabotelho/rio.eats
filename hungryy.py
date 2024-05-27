@@ -4,6 +4,8 @@ import folium  # Mapa
 from folium.plugins import MarkerCluster  # Marcadores
 from streamlit_folium import st_folium
 from streamlit_custom_notification_box import custom_notification_box
+from PIL import Image
+import numpy as np
 
 # URL direta para a imagem do Cristo no GitHub
 image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/cristinho%202.jpg"
@@ -42,7 +44,14 @@ def mostrar_perfil():
             st.image("gurume.jpg", use_column_width=True)
         with col5:
             st.image("casa tua cocina.jpg", use_column_width=True)
-    
+        
+        # Widget para capturar imagem da webcam
+        picture = st.camera_input("Tire uma foto")
+        
+        if picture:
+            img = Image.open(picture)
+            st.image(img, caption='Imagem capturada')
+
     with tab2:
         st.subheader("Top 5 Restaurantes")
         st.write("1. Irajá Redux")
