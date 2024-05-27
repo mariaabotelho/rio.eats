@@ -6,14 +6,15 @@ from streamlit_folium import st_folium
 
 # URL direta para a imagem do Cristo no GitHub
 image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/cristinho%202.jpg"
+profile_image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/matheuss.jpg"
 
 # Função para exibir o perfil fake
 def mostrar_perfil():
     st.markdown(
-        """
+        f"""
         <div style="display: flex; align-items: center;">
             <h1 style="margin-right: 10px;">Teteu Pestana</h1>
-            <img src="matheuss.jpg" width="100">
+            <img src="{profile_image_url}" width="100">
         </div>
         """,
         unsafe_allow_html=True
@@ -102,5 +103,3 @@ else:
         with st.expander(row['NOME']):
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
-
-   
