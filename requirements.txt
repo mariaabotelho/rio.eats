@@ -12,4 +12,4 @@ beautifulsoup4
 networkx
 st-gsheets-connection
 streamlit-custom-notification-box
-pip install streamlit-custom-notification-box
+
