@@ -42,3 +42,4 @@ for idx, row in dados_filtrados.iterrows():
     with st.expander(row['NOME']):
         st.markdown(f"**Endereço**: {row['ENDERECO']}")
         st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
+
