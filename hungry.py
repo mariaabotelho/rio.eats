@@ -4,8 +4,18 @@ import folium  # Mapa
 from folium.plugins import MarkerCluster  # Marcadores
 from streamlit_folium import st_folium
 
-# Título e barra lateral
-st.title('RIO EATS')
+# Título com a imagem ao lado
+st.markdown(
+    """
+    <div style="display: flex; align-items: center;">
+        <h1 style="margin-right: 10px;">RIO EATS</h1>
+        <img src="cristinho 2.jpg" width="50">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# Barra lateral
 with st.sidebar:
     st.header('Rio Eats')
     st.write('O site que vai ajudar a achar o restaurante mais pertinho de você')
@@ -42,4 +52,3 @@ for idx, row in dados_filtrados.iterrows():
     with st.expander(row['NOME']):
         st.markdown(f"**Endereço**: {row['ENDERECO']}")
         st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
-
