@@ -9,8 +9,15 @@ image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/crist
 
 # Função para exibir o perfil fake
 def mostrar_perfil():
-    st.title("Teteu Pestana")
-    st.image("matheuss.jpg", width=100)
+    st.markdown(
+        """
+        <div style="display: flex; align-items: center;">
+            <h1 style="margin-right: 10px;">Teteu Pestana</h1>
+            <img src="matheuss.jpg" width="100">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     st.write("""
         Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?
     """)
@@ -95,3 +102,5 @@ else:
         with st.expander(row['NOME']):
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
+
+   
