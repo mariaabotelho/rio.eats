@@ -53,11 +53,22 @@ def mostrar_perfil():
 
     with tab3:
         st.subheader("Interações")
-        st.write("@Eurico Comilão te adicionou como amigo")
-        st.write("@Doctor_jojo curtiu sua publicação")
-        st.write("@Vanessinha salvou sua publicação")
-        st.write("@LapaFaminto te adicionou como amigo")
-        st.write("@Cat.docinhos acabou de visitar um restaurante perto de você! Confira a avaliação dela :)")
+        interacoes = [
+            "@Eurico Comilão te adicionou como amigo",
+            "@Doctor_jojo curtiu sua publicação",
+            "@Vanessinha salvou sua publicação",
+            "@LapaFaminto te adicionou como amigo",
+            "@Cat.docinhos acabou de visitar um restaurante perto de você! Confira a avaliação dela :)"
+        ]
+        for interacao in interacoes:
+            st.markdown(
+                f"""
+                <div style="border: 1px solid #ddd; padding: 10px; margin: 5px 0; border-radius: 5px; background-color: #f9f9f9;">
+                    {interacao}
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
 
 # Função para exibir notificações temporárias
 def exibir_notificacao():
