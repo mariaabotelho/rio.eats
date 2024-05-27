@@ -12,6 +12,10 @@ image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/crist
 profile_image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/matheuss.jpg"
 logo_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/rio%20eats.jpg"
 
+# Espaço para armazenar as imagens capturadas
+if 'captured_images' not in st.session_state:
+    st.session_state.captured_images = []
+
 # Função para exibir o perfil fake
 def mostrar_perfil():
     st.markdown(
@@ -48,9 +52,16 @@ def mostrar_perfil():
         # Widget para capturar imagem da webcam
         picture = st.camera_input("Tire uma foto")
         
+        # Botão para salvar a imagem capturada
         if picture:
-            img = Image.open(picture)
-            st.image(img, caption='Imagem capturada')
+            if st.button("Salvar imagem"):
+                st.session_state.captured_images.append(picture)
+        
+        # Exibir imagens capturadas
+        if st.session_state.captured_images:
+            st.subheader("Imagens Capturadas")
+            for img in st.session_state.captured_images:
+                st.image(img)
 
     with tab2:
         st.subheader("Top 5 Restaurantes")
