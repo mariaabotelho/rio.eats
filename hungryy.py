@@ -25,7 +25,7 @@ def mostrar_perfil():
     """)
 
     # Tabs para separar as seções
-    tab1, tab2 = st.tabs(["Fotos de Pratos", "Top 5 Restaurantes"])
+    tab1, tab2, tab3 = st.tabs(["Fotos de Pratos", "Top 5 Restaurantes", "Interações"])
     
     with tab1:
         st.subheader("Fotos de Pratos")
@@ -50,18 +50,21 @@ def mostrar_perfil():
         st.write("4. Casa Tua Cocina")
         st.write("5. Paris 6")
 
-# Função para exibir notificações
-def exibir_notificacoes():
-    placeholder = st.empty()
-    with placeholder.container():
-        st.info("@Eurico Comilão te adicionou como amigo")
-    time.sleep(7)
-    placeholder.empty()
+    with tab3:
+        st.subheader("Interações")
+        st.write("@Eurico Comilão te adicionou como amigo")
+        st.write("@Doctor_jojo curtiu sua publicação")
+        st.write("@Vanessinha salvou sua publicação")
+        st.write("@LapaFaminto te adicionou como amigo")
+        st.write("@Cat.docinhos acabou de visitar um restaurante perto de você! Confira a avaliação dela :)")
 
-    with placeholder.container():
-        st.success("@Jojo curtiu sua publicação")
+# Função para exibir notificações temporárias
+def exibir_notificacao():
+    notification = st.empty()
+    with notification.container():
+        st.info("O Bar do Bigode está a 800 metros de você. Já pensou em conhecer?")
     time.sleep(7)
-    placeholder.empty()
+    notification.empty()
 
 # Barra lateral
 with st.sidebar:
@@ -118,5 +121,12 @@ else:
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
 
-# Chama a função para exibir notificações
-exibir_notificacoes()
+    # Chama a função para exibir a notificação temporária
+    exibir_notificacao()
+
+    
+    
+    
+  
+
+ 
