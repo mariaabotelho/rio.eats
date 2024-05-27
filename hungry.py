@@ -4,12 +4,15 @@ import folium  # Mapa
 from folium.plugins import MarkerCluster  # Marcadores
 from streamlit_folium import st_folium
 
+# Carregar a imagem do logo
+logo = "cristinho 2.jpg"
+
 # Título com a imagem ao lado
 st.markdown(
-    """
+    f"""
     <div style="display: flex; align-items: center;">
         <h1 style="margin-right: 10px;">RIO EATS</h1>
-        <img src="cristinho 2.jpg" width="50">
+        <img src="{logo}" width="50">
     </div>
     """,
     unsafe_allow_html=True
