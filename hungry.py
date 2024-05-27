@@ -12,7 +12,7 @@ st.markdown(
     f"""
     <div style="display: flex; align-items: center;">
         <h1 style="margin-right: 10px;">RIO EATS</h1>
-        <img src="{image_url}" width="50">
+        <img src="{image_url}" width="70">
     </div>
     """,
     unsafe_allow_html=True
