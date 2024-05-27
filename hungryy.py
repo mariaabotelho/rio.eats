@@ -14,27 +14,32 @@ def mostrar_perfil():
     st.write("""
         Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?
     """)
+
+    # Tabs para separar as seções
+    tab1, tab2 = st.tabs(["Fotos de Pratos", "Top 5 Restaurantes"])
     
-    st.subheader("Fotos de pratos")
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.image("paris 6.jpg", use_column_width=True)
-    with col2:
-        st.image("iraja.jpg", use_column_width=True)
-    with col3:
-        st.image("mocelin.jpg", use_column_width=True)
-    col4, col5 = st.columns(2)
-    with col4:
-        st.image("gurume.jpg", use_column_width=True)
-    with col5:
-        st.image("casa tua cocina.jpg", use_column_width=True)
+    with tab1:
+        st.subheader("Fotos de Pratos")
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.image("paris 6.jpg", use_column_width=True)
+        with col2:
+            st.image("iraja.jpg", use_column_width=True)
+        with col3:
+            st.image("mocelin.jpg", use_column_width=True)
+        col4, col5 = st.columns(2)
+        with col4:
+            st.image("gurume.jpg", use_column_width=True)
+        with col5:
+            st.image("casa tua cocina.jpg", use_column_width=True)
     
-    st.subheader("Top 5 Restaurantes")
-    st.write("1. Irajá Redux")
-    st.write("2. Gurumê")
-    st.write("3. Mocellin Steakhouse")
-    st.write("4. Casa Tua Cocina")
-    st.write("5. Paris 6")
+    with tab2:
+        st.subheader("Top 5 Restaurantes")
+        st.write("1. Irajá Redux")
+        st.write("2. Gurumê")
+        st.write("3. Mocellin Steakhouse")
+        st.write("4. Casa Tua Cocina")
+        st.write("5. Paris 6")
 
 # Título com a imagem ao lado
 st.markdown(
@@ -90,3 +95,7 @@ else:
         with st.expander(row['NOME']):
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
+
+ 
+    
+  
