@@ -14,8 +14,8 @@ with st.sidebar:
 
 st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
 
-# Carregar dados diretamente do CSV limpo
-data = pd.read_csv('restaurantes_final_limpo.csv')
+# Carregar dados diretamente do CSV limpo com estrelas
+data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
 
 # Criar um filtro para o tipo de culinária
 opcoes_culinaria = data['CULINARIA'].unique()
@@ -41,3 +41,4 @@ st_folium(m, width=700, height=500)
 for idx, row in dados_filtrados.iterrows():
     with st.expander(row['NOME']):
         st.markdown(f"**Endereço**: {row['ENDERECO']}")
+        st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
