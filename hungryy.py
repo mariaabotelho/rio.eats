@@ -8,6 +8,7 @@ import time
 # URL direta para a imagem do Cristo no GitHub
 image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/cristinho%202.jpg"
 profile_image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/matheuss.jpg"
+logo_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/rio%20eats.jpg"
 
 # Função para exibir o perfil fake
 def mostrar_perfil():
@@ -68,10 +69,10 @@ def exibir_notificacao():
 
 # Barra lateral
 with st.sidebar:
+    st.image(logo_url, use_column_width=True)
     st.header('Rio Eats')
     st.write('O site que vai ajudar a achar o restaurante mais pertinho de você')
     st.caption('Criado por Luaninha, Julinha e Mary')
-    st.image('rio eats.jpg')
     
     # Link para a seção de perfil
     pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
@@ -79,6 +80,9 @@ with st.sidebar:
 if pagina == "Perfil":
     mostrar_perfil()
 else:
+    # Exibir a notificação temporária no início da página
+    exibir_notificacao()
+
     # Título com a imagem ao lado
     st.markdown(
         f"""
@@ -120,13 +124,3 @@ else:
         with st.expander(row['NOME']):
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
-
-    # Chama a função para exibir a notificação temporária
-    exibir_notificacao()
-
-    
-    
-    
-  
-
- 
