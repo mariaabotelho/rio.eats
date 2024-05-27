@@ -14,16 +14,8 @@ with st.sidebar:
 
 st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
 
-
 # Carregar dados diretamente do CSV limpo
-try:
-    data = pd.read_csv('restaurantes_final_limpo.csv')
-except FileNotFoundError as e:
-    st.error(f"Erro ao carregar o arquivo: {e}")
-    st.stop()
-except ImportError as e:
-    st.error(f"Erro de importação: {e}. Certifique-se de que o pacote 'pandas' está instalado.")
-    st.stop()
+data = pd.read_csv('restaurantes_final_limpo.csv')
 
 # Criar um filtro para o tipo de culinária
 opcoes_culinaria = data['CULINARIA'].unique()
@@ -49,4 +41,3 @@ st_folium(m, width=700, height=500)
 for idx, row in dados_filtrados.iterrows():
     with st.expander(row['NOME']):
         st.markdown(f"**Endereço**: {row['ENDERECO']}")
-
