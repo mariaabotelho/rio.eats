@@ -50,6 +50,19 @@ def mostrar_perfil():
         st.write("4. Casa Tua Cocina")
         st.write("5. Paris 6")
 
+# Função para exibir notificações
+def exibir_notificacoes():
+    placeholder = st.empty()
+    with placeholder.container():
+        st.info("@Eurico Comilão te adicionou como amigo")
+    time.sleep(7)
+    placeholder.empty()
+
+    with placeholder.container():
+        st.success("@Jojo curtiu sua publicação")
+    time.sleep(7)
+    placeholder.empty()
+
 # Barra lateral
 with st.sidebar:
     st.header('Rio Eats')
@@ -104,20 +117,6 @@ else:
         with st.expander(row['NOME']):
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
-
-# Exibir notificações temporárias
-def exibir_notificacoes():
-    placeholder = st.empty()
-
-    with placeholder.container():
-        st.info("Eurico Comilão te adicionou como amigo")
-        time.sleep(3)
-        placeholder.empty()
-
-    with placeholder.container():
-        st.success("Jojo curtiu sua publicação")
-        time.sleep(3)
-        placeholder.empty()
 
 # Chama a função para exibir notificações
 exibir_notificacoes()
