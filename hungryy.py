@@ -3,7 +3,7 @@ import pandas as pd
 import folium  # Mapa
 from folium.plugins import MarkerCluster  # Marcadores
 from streamlit_folium import st_folium
-import time
+from streamlit_custom_notification_box import custom_notification_box
 
 # URL direta para a imagem do Cristo no GitHub
 image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/cristinho%202.jpg"
@@ -72,11 +72,21 @@ def mostrar_perfil():
 
 # Função para exibir notificações temporárias
 def exibir_notificacao():
-    notification = st.empty()
-    with notification.container():
-        st.info("O Bar do Bigode está a 800 metros de você. Já pensou em conhecer?")
-    time.sleep(7)
-    notification.empty()
+    styles = {
+        'material-icons': {'color': 'red'},
+        'text-icon-link-close-container': {'box-shadow': '#3896de 0px 4px'},
+        'notification-text': {'': ''},
+        'close-button': {'': ''},
+        'link': {'': ''}
+    }
+    custom_notification_box(
+        icon='info',
+        textDisplay='O Bar do Bigode está a 800 metros de você. Já pensou em conhecer?',
+        externalLink='',
+        url='#',
+        styles=styles,
+        key="notificacao_bigode"
+    )
 
 # Barra lateral
 with st.sidebar:
@@ -91,7 +101,7 @@ with st.sidebar:
 if pagina == "Perfil":
     mostrar_perfil()
 else:
-    # Exibir a notificação temporária no início da página
+    # Exibir a notificação personalizada no início da página
     exibir_notificacao()
 
     # Título com a imagem ao lado
