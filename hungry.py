@@ -1,20 +1,19 @@
 import streamlit as st
 import pandas as pd
-import folium
-from folium.plugins import MarkerCluster
+import folium #cria o mapa
+from folium.plugins import MarkerCluster #restaurantes no mapa
 from streamlit_folium import st_folium
-from streamlit_custom_notification_box import custom_notification_box
+from streamlit_custom_notification_box import custom_notification_box #notificação da propaganda 
 
-# URLs das imagens no GitHub
 image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/cristinho%202.jpg"
 profile_image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/matheuss.jpg"
 logo_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/rio%20eats.jpg"
 
-# Espaço para armazenar as imagens capturadas
-if 'captured_images' not in st.session_state:
+
+if 'captured_images' not in st.session_state: # pra armazenar foto tirada pelo usurário
     st.session_state.captured_images = []
 
-# Função para exibir o perfil fake
+
 def mostrar_perfil():
     st.markdown(
         f"""
@@ -23,13 +22,13 @@ def mostrar_perfil():
             <img src="{profile_image_url}" width="100">
         </div>
         """,
-        unsafe_allow_html=True
+        unsafe_allow_html=True #permite a renderização de HTML no Streamlit
     )
     st.write("""
         Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?
     """)
 
-    # Tabs para separar as seções
+    
     tab1, tab2, tab3 = st.tabs(["Fotos de Pratos", "Top 5 Restaurantes", "Interações"])
     
     with tab1:
@@ -47,15 +46,15 @@ def mostrar_perfil():
         with col5:
             st.image("casa tua cocina.jpg", use_column_width=True)
         
-        # Widget para capturar imagem da webcam
+        # widget capturar imagem da webcam
         picture = st.camera_input("Hmm parece estar gostoso.. Tire uma foto da sua comida para registrar!")
         
-        # Botão para salvar a imagem capturada
+        # botao pra salvar a imagem capturada
         if picture:
             if st.button("Salvar imagem"):
                 st.session_state.captured_images.append(picture)
         
-        # Exibir imagens capturadas
+       
         if st.session_state.captured_images:
             st.subheader("Imagens Capturadas")
             for img in st.session_state.captured_images:
@@ -88,7 +87,7 @@ def mostrar_perfil():
                 unsafe_allow_html=True
             )
 
-# Função para exibir notificações temporárias
+# função da notificação da propganda
 def exibir_notificacao():
     styles = {
         'material-icons': {'color': 'red'},
@@ -106,7 +105,7 @@ def exibir_notificacao():
         key="notificacao_bigode"
     )
 
-# Barra lateral
+
 with st.sidebar:
     pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
     st.image(logo_url, use_column_width=True)
@@ -117,10 +116,9 @@ with st.sidebar:
 if pagina == "Perfil":
     mostrar_perfil()
 else:
-    # Exibir a notificação personalizada no início da página
     exibir_notificacao()
 
-    # Título com a imagem ao lado
+    # pra colocar o cristozinho do lado
     st.markdown(
         f"""
         <div style="display: flex; align-items: center;">
@@ -133,30 +131,29 @@ else:
 
     st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
 
-    # Carregar dados diretamente do CSV limpo com estrelas
+    
     data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
 
-    # Criar um filtro para o tipo de culinária
+    # filtro com os tipos de culinária
     opcoes_culinaria = data['CULINARIA'].unique()
     culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default=opcoes_culinaria[:3])
 
-    # Filtrar dados com base nos tipos de culinária selecionados
+    # filtrar dados com base nos tipos de culinária selecionados
     dados_filtrados = data[data['CULINARIA'].isin(culinaria_selecionada)]
 
-    # Criar mapa
+    # criar mapa
     m = folium.Map(location=[dados_filtrados['latitude'].mean(), dados_filtrados['longitude'].mean()], zoom_start=12)
     marker_cluster = MarkerCluster().add_to(m)
 
-    # Adicionar marcadores ao mapa
+    # adicionar marcadores ao mapa
     for idx, row in dados_filtrados.iterrows():
         folium.Marker(location=[row['latitude'], row['longitude']],
                       popup=f"{row['NOME']} - {row['CULINARIA']}",
                       icon=folium.Icon(color="blue", icon="info-sign")).add_to(marker_cluster)
-
-    # Exibir mapa
+                      
     st_folium(m, width=700, height=500)
 
-    # Exibe info dos restaurantes
+    # info dos restaurantes
     for idx, row in dados_filtrados.iterrows():
         with st.expander(row['NOME']):
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
