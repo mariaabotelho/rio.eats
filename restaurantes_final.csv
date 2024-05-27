@@ -1,0 +1,260 @@
+NOME,BAIRRO,ENDERECO,CULINARIA,endereco_completo,latitude,longitude
+Malta Beef Club,Leblon,"Av. General San Martin, 359",Carne,"Avenida General San Martin, Rio de Janeiro, Brazil",-22.9873999,-43.2286786
+Irajá Redux,Leblon,"Av. Ataulfo de Paiva, 270 - Lojas 112/113",Contemporânea,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+Gurumê,Leblon,"Av. Ataulfo de Paiva, 270 - Loja 210",Japonesa,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+CT Boucherie,Leblon,"Rua Dias Ferreira, 636",Francesa,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Clan BBQ,Leblon,"Rua Dias Ferreira, 233",Carne,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Nola,Leblon,"Rua Dias Ferreira, 247",Italiana,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Cortés Asador,Leblon,"Av. Afrânio de Melo Franco, 290 - Lojas 410/411",Carne,"Avenida Afrânio de Melo Franco, Rio de Janeiro, Brazil",-22.9788215,-43.2181676
+Itacoa ,Leblon,"Av. Ataulfo de Paiva, 270 - Loja 105",Francesa,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+San ,Leblon,"Rua Humberto de Campos, 827",Japonesa,"Rua Humberto de Campos, Rio de Janeiro, Brazil",-22.6786615,-43.2398067
+Sushi Leblon,Leblon,"Rua Dias Ferreira, 256",Japonesa,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Ocyá,Leblon,"Rua Aristides Espinola, 88",Frutos do mar,"Rua Aristides Espinola, Rio de Janeiro, Brazil",-22.9866388,-43.2268313
+Nino,Ipanema,"Rua Barão da Torre, 490",Italiana,"Rua Barão da Torre, Rio de Janeiro, Brazil",-22.6270971,-42.0044768
+Da Marino,Ipanema,"Rua Barão da Torre, 482",Mediterrânea,"Rua Barão da Torre, Rio de Janeiro, Brazil",-22.6270971,-42.0044768
+Spicy Fish,Ipanema,"Rua Maria Quitéria, 99",Asiática,"Rua Maria Quitéria, Rio de Janeiro, Brazil",-22.8254531,-43.0767814
+Tiara ,Leblon,"Av. Ataulfo de Paiva, 270 - Loja 111",Contemporânea,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+IT Ristorante,Leblon,"Av. Afrânio de Melo Franco, 290 - 4º Piso",Italiana,"Avenida Afrânio de Melo Franco, Rio de Janeiro, Brazil",-22.9788215,-43.2181676
+Guacamole Taqueria,Leblon,"Rua Cupertino Durão, 96",Mexicana,"Rua Cupertino Durão, Rio de Janeiro, Brazil",-22.7567585,-43.4385812
+Haru,Copacabana,"Rua Raimundo Corrêa, 10",Japonesa,"Rua Raimundo Corrêa, Rio de Janeiro, Brazil",-22.508634,-44.077126
+Tutto Nhoque,Botafogo,"Rua São Clemente, 24",Italiana,"Rua São Clemente, Rio de Janeiro, Brazil",-22.8346574,-43.614929
+T.T. Burguer,Leblon,"Av. Ataulfo de Paiva, 1240",Hamburgueria,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+Ráscal,Leblon,"Av. Afrânio de Melo Franco, 290 - 4º Piso",Mediterrânea,"Avenida Afrânio de Melo Franco, Rio de Janeiro, Brazil",-22.9788215,-43.2181676
+Mocellin Steakhouse,Barra da Tijuca,"Av. Armando Lombardi, 1010",Carne,"Avenida Armando Lombardi, Rio de Janeiro, Brazil",-23.0071673,-43.3081615
+D'Heaven,Barra da Tijuca,"Av. das Américas, 3900",Francesa,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Alessandro & Frederico,Ipanema,"Rua Garcia d'Avila, 134",Italiana,"Rua Garcia d'Avila, Rio de Janeiro, Brazil",-22.9829363,-43.2091512
+Pope,Ipanema,"Rua Joana Angélica, 47",Mediterrânea,"Rua Joana Angélica, Rio de Janeiro, Brazil",-22.9832734,-43.2049026
+Gero Panini ,Ipanema,"Rua Aníbal de Mendonça, 157 ",Italiana,"Rua Aníbal de Mendonça, Rio de Janeiro, Brazil",-22.9828334,-43.2112609
+Xian,Centro,"Av. Alm. Silvio de Noronha, 365",Asiática,"Avenida Alm. Silvio de Noronha, Rio de Janeiro, Brazil",-22.915589,-43.165112
+Masi,São Conrado,"Av. Niemeyer, 769 - 30 andar",Japonesa,"Avenida Niemeyer, Rio de Janeiro, Brazil",-22.9909376,-43.2322211
+Satyricon,Ipanema,"Rua Barão da Torre, 192",Mediterrânea,"Rua Barão da Torre, Rio de Janeiro, Brazil",-22.6270971,-42.0044768
+Álvaro's ,Leblon,"Av. Ataulfo de Paiva, 500",Brasileira,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+Babbo Osteria,Ipanema,"Rua Barão da Torre, 632 ",Italiana,"Rua Barão da Torre, Rio de Janeiro, Brazil",-22.6270971,-42.0044768
+Ferro e Farinha,Leblon,"Rua Dias Ferreira, 48",Pizzaria,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Giuseppe Grill,Leblon,"Av. Bartolomeu Mitre, 370 ",Carne e frutos do mar,"Avenida Bartolomeu Mitre, Rio de Janeiro, Brazil",-22.9790008,-43.2245216
+Fiorino,Tijuca,Av.Heitor Beltrão 126,Italiana,"AvenidaHeitor Beltrão 126, Rio de Janeiro, Brazil",-22.9199733,-43.2222855
+Domenica Pizzaria Artesanal,Tijuca,Rua São francisco Xavier 18,Pizzaria,"Rua São francisco Xavier 18, Rio de Janeiro, Brazil",-22.5612771,-42.6841755
+Bucaneiros Tijuca,Tijuca,Rua Major Avila 200,Americana,"Rua Major Avila 200, Rio de Janeiro, Brazil",-22.8988414,-42.3582789
+Bar do Momo,Uruguai,Rua General Espirito Santo Cardoso 50,Brasileira,"Rua General Espirito Santo Cardoso 50, Rio de Janeiro, Brazil",-22.9298348,-43.2431877
+Otto,Tijuca,Rua Uruguai 380,Alemã,"Rua Uruguai 380, Rio de Janeiro, Brazil",-22.9321657,-43.2415212
+Restaurante Salete,Tijuca,Rua Afonso Pena 189,Brasileira,"Rua Afonso Pena 189, Rio de Janeiro, Brazil",-22.9945024,-44.2390533
+Tragga Del Mar,Barra Da Tijuca,Av. Das Américas 8585,Frutos do mar e Mediterrâneo,"Avenida Das Américas 8585, Rio de Janeiro, Brazil",-23.0012325,-43.3965375
+Na Brasa Columbia,Tijuca,Rua Hadock Lobo 346,Brasileira,"Rua Hadock Lobo 346, Rio de Janeiro, Brazil",-22.9151577,-43.2075116
+Turino,Tijuca,Rua Santa Sofia 114,Italiana,"Rua Santa Sofia 114, Rio de Janeiro, Brazil",-22.7285423,-43.4967019
+Toca da Traira,Botafogo,Rua General Severiano 97,Frutos do mar e Mediterrâneo,"Rua General Severiano 97, Rio de Janeiro, Brazil",-22.9540228,-43.17786973955063
+Fornêro,Tijuca,Rua Deputado Soares Filho 321A,Pizzaria,"Rua Deputado Soares Filho 321A, Rio de Janeiro, Brazil",-22.6420412,-43.63895
+Mamma Jamma,Botafogo,"Praia de Botafogo, 400 - Loja 504 ",Pizzaria,"Praia de Botafogo, Rio de Janeiro, Brazil",-22.94540365,-43.18081801820892
+Coco Bambu,Botafogo,"Rua Gen. Severiano, 97",Frutos do mar,"Rua Gen. Severiano, Rio de Janeiro, Brazil",-22.71148,-43.4587003
+Nolita,Barra da Tijuca ,"Av das Americas, 3900 ",Italiana,"Av das Americas, Rio de Janeiro, Brazil",-22.9960898,-43.5942696
+Tragga Humaitá,Humaitá,Rua Capitão Salomão 74,Steakhouse,"Rua Capitão Salomão 74, Rio de Janeiro, Brazil",-22.9571371,-43.1962066
+La Esquina,Lapa,Av. Mem de Sá 61,Sul- Ameicana,"Avenida Mem de Sá 61, Rio de Janeiro, Brazil",-22.9133866,-43.1810992
+Cazota Bar,Lapa,Av. Mem de Sá 126,Brasileira e Churrasco Argentino,"Avenida Mem de Sá 126, Rio de Janeiro, Brazil",-22.9126538,-43.183891
+Carioca da Gema ,Lapa,Av. Mem de Sá 79,Brasileira ,"Avenida Mem de Sá 79, Rio de Janeiro, Brazil",-22.9132755,-43.1819106
+Paris Gastrô,Flamengo,Praia do Flamengo 340,Francesa,"Praia do Flamengo 340, Rio de Janeiro, Brazil",-22.9276356,-43.1737414
+Mitsuo Japinha ,Flamengo,Rua Marques de Abrantes 79,Japonesa,"Rua Marques de Abrantes 79, Rio de Janeiro, Brazil",-22.9360723,-43.1770784
+Amburgueria Mocellin,Barra da Tijuca,Av. Marechal henrique Lott 120,Fast- food,"Avenida Marechal henrique Lott 120, Rio de Janeiro, Brazil",-23.001451,-43.3481247
+Marchezinho,Botafogo,"Rua Voluntários da Pátria, 46",Brasileira,"Rua Voluntários da Pátria, Rio de Janeiro, Brazil",-22.4652689,-44.4673968
+Paris 6,Barra da Tijuca," Av. Lúcio Costa, 3150",Francesa,"Avenida Lúcio Costa, Rio de Janeiro, Brazil",-23.0131298,-43.3947761
+Massa + Ella,Leblon,"Rua Dias Ferreira, 617",Italiana,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Esplanada Grill,Ipanema,"Rua Barão da Torre, 600 ",Churrascaria,"Rua Barão da Torre, Rio de Janeiro, Brazil",-22.6270971,-42.0044768
+La Villa,Botafogo,"Rua Álvaro Ramos, 408",Francesa,"Rua Álvaro Ramos, Rio de Janeiro, Brazil",-22.7046041,-43.4273632
+Didier,Ipanema,"Rua Vinícius de Moraes, 124",Francesa,"Rua Vinícius de Moraes, Rio de Janeiro, Brazil",-22.4604693,-44.4810911
+Posì Mozza & Mare,Ipanema,"Rua Aníbal de Mendonça, 158 ",Italiana,"Rua Aníbal de Mendonça, Rio de Janeiro, Brazil",-22.9828334,-43.2112609
+Braseiro da Gávea,Gávea,"Praça Santos Dumont, 116",Brasileira,"Praça Santos Dumont, Rio de Janeiro, Brazil",-22.50146455,-44.07522764529055
+Alfaia,Copacabana,"Rua Inhangá, 30 ",Portuguesa,"Rua Inhangá, Rio de Janeiro, Brazil",-22.8458127,-42.34074
+La Trattoria,Copacabana ,"Rua Fernando Mendes, 7 ",Italiana,"Rua Fernando Mendes, Rio de Janeiro, Brazil",-22.9136061,-42.9338004
+Tasca Miúda,Leblon,"Rua Humberto de Campos, 827",Portuguesa,"Rua Humberto de Campos, Rio de Janeiro, Brazil",-22.6786615,-43.2398067
+Degrau,Leblon," Av. Ataulfo de Paiva, 517 ",Brasileira,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+Zazá Bistrô Tropical,Ipanema,"Rua Joana Angélica, 40 ",Marroquina e asiática,"Rua Joana Angélica, Rio de Janeiro, Brazil",-22.9832734,-43.2049026
+Chez Claude,Leblon,"Rua Conde de Bernadott,  26",Francesa,"Rua Conde de Bernadott, Rio de Janeiro, Brazil",nan,nan
+Juliette Bistrô,Leblon,"Av. Ataulfo de Paiva, 270",Francesa,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+Casa Graviola,Leblon,"Av. Ataulfo de Paiva, 1240",Vegetariana,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+Ono Poke ,Ipanema," Rua Visc. de Pirajá, 630",Japonesa e Havaiana,"Rua Visc. de Pirajá, Rio de Janeiro, Brazil",-22.9837404,-43.214208
+Casa Tua Cucina,Barra da Tijuca,"Av. Érico Veríssimo, 190",Italiana,"Avenida Érico Veríssimo, Rio de Janeiro, Brazil",-23.010411,-43.308371
+Adega Santiago,Barra da Tijuca,"Av. das Américas, 3900 ",Ibérica,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Maria e o Boi,Ipanema,"Rua Maria Quitéria, 111",Carne,"Rua Maria Quitéria, Rio de Janeiro, Brazil",-22.8254531,-43.0767814
+Koa Poke,Copacabana,"Rua Barão de Ipanema, 15 ",Havaiana,"Rua Barão de Ipanema, Rio de Janeiro, Brazil",-22.9746064,-43.1905222
+Pobre Juan ,Barra da Tijuca,"Av. das Américas, 3900 ",Argentina,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Lasai,Humaitá,"Largo dos Leões, 35",Moderna,"Largo dos Leões, Rio de Janeiro, Brazil",-22.95332185,-43.19664946819718
+Naga,Barra da Tijuca,"Av. das Américas, 3900",Japonesa,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Galeto do Leblon,Leblon,"Rua Aristides Espinola, 121",Frango,"Rua Aristides Espinola, Rio de Janeiro, Brazil",-22.9866388,-43.2268313
+Mr. Lam,Lagoa,"Rua Maria Angélica, 21",Chinesa,"Rua Maria Angélica, Rio de Janeiro, Brazil",-22.7500808,-43.4110004
+Corrientes 348 ,Barra da Tijuca,"Av. das Américas, 7777 ",Argentina,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Abbraccio Cucina,Botafogo," Av. Lauro Sodré, 445",Italiana,"Avenida Lauro Sodré, Rio de Janeiro, Brazil",-22.9532376,-43.1789597
+Royal Grill,Barra da Tijuca,"Av. Ayrton Senna, 2150",Churrascaria,"Avenida Ayrton Senna, Rio de Janeiro, Brazil",-23.0054271,-44.3091696
+Pici Trattoria,Ipanema,"Rua Barão da Torre, 348",Italiana,"Rua Barão da Torre, Rio de Janeiro, Brazil",-22.6270971,-42.0044768
+Nusa Café,Ipanema,"Rua Vinícius de Moraes, 129",Brunch,"Rua Vinícius de Moraes, Rio de Janeiro, Brazil",-22.4604693,-44.4810911
+Absurda Confeitaria,Jardim Botânico," Rua Pacheco Leão, 792",Confeitaria,"Rua Pacheco Leão, Rio de Janeiro, Brazil",-22.166129,-43.5809666
+Gringo Café,Ipanema," Rua Barão da Torre, 240",Brunch,"Rua Barão da Torre, Rio de Janeiro, Brazil",-22.6270971,-42.0044768
+Confeitaria Colombo,Centro,"Rua Gonçalves Dias, 32 ",Confeitaria,"Rua Gonçalves Dias, Rio de Janeiro, Brazil",-22.5206601,-43.1886648
+Talho Capixaba ,Leblon," Av. Ataulfo de Paiva, 1022 ",Café da manhã e brunch,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+P.OVO,Ipanema ," Rua Visconde de Pirajá, 437 ",Lanche,"Rua Visconde de Pirajá, Rio de Janeiro, Brazil",-22.9837404,-43.214208
+Empório Jardim,Ipanema ,"Rua Maria Quitéria, 62 ",Café da manhã,"Rua Maria Quitéria, Rio de Janeiro, Brazil",-22.8254531,-43.0767814
+360 Sports,Barra da Tijuca,"Ilha da Coroa, 09. Barra da TijucaRio de Janeiro",Brasileira,"Ilha da Coroa, Rio de Janeiro, Brazil",nan,nan
+Abry Bar & Restô,Barra da Tijuca,"Av. das Américas, 8585. Barra da TijucaRio de Janeiro",Brasileira,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Aconchego Carioca (Bandeira),Praça da Bandeira,"Rua Barão de Iguatemi, 245. Praça da BandeiraRio de Janeiro",Brasileira,"Rua Barão de Iguatemi, Rio de Janeiro, Brazil",-22.9122461,-43.2133084
+Adega Forletta,Itaipuaçu,"Rua Ismael Lucindo da Silva, 391. ItaipuaçuMaricá",Bistrô,"Rua Ismael Lucindo da Silva, Rio de Janeiro, Brazil",nan,nan
+Adega do Pimenta,Santa Teresa,"Rua Almirante Alexandrino, 296 - B. Santa TeresaRio de Janeiro",Alemã,"Rua Almirante Alexandrino, Rio de Janeiro, Brazil",-22.772237,-43.5576542
+Allori Cucina & Bar,São Francisco,"Av. Quintino Bocaiúva, 301. São FranciscoNiterói",Italiana,"Avenida Quintino Bocaiúva, Rio de Janeiro, Brazil",-22.9208954,-43.094487
+Alto Barra Beach Lounge,Barra de Guaratiba,"Estr. Roberto Burle Marx, 9600. Barra de GuaratibaRio de Janeiro",Frutos do Mar,"Estr. Roberto Burle Marx, Rio de Janeiro, Brazil",-23.069458,-43.567021
+Amélie Crêperie et Bistrot (Barra Shopping),Barra da Tijuca,"Av. das Américas, 4.666. Barra da TijucaRio de Janeiro",Francesa,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Amélie Crêperie et Bistrot (Botafogo Praia Shopping),Botafogo,"Praia de Botafogo, 400. BotafogoRio de Janeiro",Bistrô,"Praia de Botafogo, Rio de Janeiro, Brazil",-22.94540365,-43.18081801820892
+Amélie Crêperie et Bistrot (Gávea),Gávea,"Rua Marquês de São Vicente, 52. GáveaRio de Janeiro",Francesa,"Rua Marquês de São Vicente, Rio de Janeiro, Brazil",-22.9094903,-42.7963923
+Ary Delicatessen (Shopping Estação Itaipava),Itaipava,"Estr. União e Indústria, 11000. ItaipavaPetrópolis",Contemporânea,"Estr. União e Indústria, Rio de Janeiro, Brazil",-22.3451565,-43.1239477
+Bar Urca,Urca,"Rua Cândido Gaffrée, 205. UrcaRio de Janeiro",Portuguesa,"Rua Cândido Gaffrée, Rio de Janeiro, Brazil",-22.947593,-43.1626468
+Bar do Mumuzinho,Gávea,"Rua Marquês de São Vicente, 52. GáveaRio de Janeiro",Brasileira,"Rua Marquês de São Vicente, Rio de Janeiro, Brazil",-22.9094903,-42.7963923
+Basha,Copacabana,"Av. Nossa Senhora de Copacabana, 198. CopacabanaRio de Janeiro",Libanesa,"Avenida Nossa Senhora de Copacabana, Rio de Janeiro, Brazil",-22.9679435,-43.1827662
+Beer&Grill Legado Romani,Barra da Tijuca,"Av. das Américas, 7700. Barra da TijucaRio de Janeiro",Bar,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Bistrô da Casa,Glória,"Ladeira da Glória, 98. GlóriaRio de Janeiro",Bistrô,"Ladeira da Glória, Rio de Janeiro, Brazil",-22.9222092,-43.1751759
+Bonifácio & Berenice,Leblon,"Rua Rainha Guilhermina, 95. LeblonRio de Janeiro",Brasileira,"Rua Rainha Guilhermina, Rio de Janeiro, Brazil",-22.9833238,-43.2279754
+Boteco Colarinho (Botafogo),Botafogo,"Rua Nelson Mandela, 100. BotafogoRio de Janeiro",Brasileira,"Rua Nelson Mandela, Rio de Janeiro, Brazil",-22.6958353,-43.5141434
+Boteco Colarinho (Copacabana),Copacabana,"Rua Francisco Otaviano, 30. CopacabanaRio de Janeiro",Brasileira,"Rua Francisco Otaviano, Rio de Janeiro, Brazil",-22.8883591,-43.0018079
+Boteco do Xopin,Tijuca,"Rua Yeda, 512. TijucaTeresópolis",Bar,"Rua Yeda, Rio de Janeiro, Brazil",-22.4158475,-42.9568888
+Bottega 73 Bistrô,Flamengo,"Rua Paissandu, 73. FlamengoRio de Janeiro",Contemporânea,"Rua Paissandu, Rio de Janeiro, Brazil",-22.790174,-43.5391966
+Brewteco (Gávea),Gávea,"Praça Santos Dumont, 106. GáveaRio de Janeiro",Comida de boteco,"Praça Santos Dumont, Rio de Janeiro, Brazil",-22.50146455,-44.07522764529055
+Brewteco (Lapa),Centro,"Rua do Rezende, 38. CentroRio de Janeiro",Comida de boteco,"Rua do Rezende, Rio de Janeiro, Brazil",-22.9132194,-43.1862026
+Brewteco (Leblon),Leblon,"Rua Dias Ferreira, 42. LeblonRio de Janeiro",Comida de boteco,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Brewteco (Rosas),Barra da Tijuca,"Av. Marechal Henrique Lott, 120. Barra da TijucaRio de Janeiro",Comida de boteco,"Avenida Marechal Henrique Lott, Rio de Janeiro, Brazil",-23.001451,-43.3481247
+Brewteco (Rua do Rio),Del Castilho,"Av. Pastor Martin Luther King Jr., 126 - Loja 106. Del CastilhoRio de Janeiro",Comida de boteco,"Avenida Pastor Martin Luther King Jr., Rio de Janeiro, Brazil",-22.875949,-43.2716793
+Brewteco (Tijuca),Tijuca,"Av. Maracanã, 782. TijucaRio de Janeiro",Comida de boteco,"Avenida Maracanã, Rio de Janeiro, Brazil",-22.7513579,-43.4790872
+Broto (Copacabana),Copacabana,"Rua Aires Saldanha, 13. CopacabanaRio de Janeiro",Pizzaria,"Rua Aires Saldanha, Rio de Janeiro, Brazil",-22.9781514,-43.1897066
+Broto (Niterói),Icaraí,"Rua Nobrega, 90. IcaraíNiterói",Pizzaria,"Rua Nobrega, Rio de Janeiro, Brazil",-22.9027647,-43.1041081
+Broto (São Francisco),São Francisco,"Av. Quintino Bocaiúva, 171. São FranciscoNiterói",Pizzaria,"Avenida Quintino Bocaiúva, Rio de Janeiro, Brazil",-22.9208954,-43.094487
+Broto (Tijuca),Tijuca,"Rua Maj. Ávila, 456. TijucaRio de Janeiro",Pizzaria,"Rua Maj. Ávila, Rio de Janeiro, Brazil",-22.9238035,-43.232377
+Broto Pizzaria (Botafogo),Botafogo,"Rua Álvaro Ramos, 171. BotafogoRio de Janeiro",Pizzaria,"Rua Álvaro Ramos, Rio de Janeiro, Brazil",-22.7046041,-43.4273632
+Bráz Pizzaria (Lagoa),Jardim Botânico,"Rua Maria Angélica, 129. Jardim BotânicoRio de Janeiro",Pizzaria,"Rua Maria Angélica, Rio de Janeiro, Brazil",-22.7500808,-43.4110004
+Bull Steak Bar,Barra da Tijuca,"Av. das Américas, 500. Barra da TijucaRio de Janeiro",Steakhouse,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Bullguer (Tijuca),Tijuca,Av. Maracanã. TijucaRio de Janeiro,Hamburgueria,"Avenida Maracanã. TijucaRio de Janeiro, Rio de Janeiro, Brazil",-22.921946,-43.2354572
+Burgers Rio (Botafogo),Botafogo,"Rua Voluntários da Pátria, 1. BotafogoRio de Janeiro",Hamburgueria,"Rua Voluntários da Pátria, Rio de Janeiro, Brazil",-22.4652689,-44.4673968
+Burgers Rio (Ipanema),Ipanema,"Aníbal de Mendonça, 55. IpanemaRio de Janeiro",Hamburgueria,"Aníbal de Mendonça, Rio de Janeiro, Brazil",-22.9861685,-43.2115063
+Caipi Café,Centro,"Av. Felíciano Sodré, 488. CentroNiterói",Brasileira,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Caju Gastrobar,Copacabana,"Praça Demétrio Ribeiro, 97. CopacabanaRio de Janeiro",Brasileira,"Praça Demétrio Ribeiro, Rio de Janeiro, Brazil",-22.96188405,-43.1756659352657
+Calamares Cevicheria Restobar,Flamengo,"Rua Arno Konder S/N, loja P. FlamengoRio de Janeiro",Peruana,"Rua Arno Konder S/N, Rio de Janeiro, Brazil",-22.9305502,-43.1767537
+Cam O'n Thai Food,Barra da Tijuca,"Av. das Américas, 500. Barra da TijucaRio de Janeiro",Tailandesa,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Cam O'n Thai Food (Botafogo),Humaitá,"Rua Visc. de Caravelas, 111. HumaitáRio de Janeiro",Tailandesa,"Rua Visc. de Caravelas, Rio de Janeiro, Brazil",-22.7950897,-43.0160423
+Cantón,Copacabana,"Rua Rodolfo Dantas, 26. CopacabanaRio de Janeiro",Peruana,"Rua Rodolfo Dantas, Rio de Janeiro, Brazil",-22.7795525,-43.327658
+Casa da Vila Artesanais,Centro,"Av. Felíciano Sodré, 488. CentroNiterói",Brasileira / Mediterrânea,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Casa do Saulo,Centro,Rodrigues Alves - Praça Mauá. CentroRio de Janeiro,Paraense,"Rodrigues Alves - Praça Mauá. CentroRio de Janeiro, Rio de Janeiro, Brazil",-22.8940683499999,-43.1794045300581
+Casarão Odin,Centro,"Rua Alfredo Pachá, 320. CentroPetrópolis",Bar,"Rua Alfredo Pachá, Rio de Janeiro, Brazil",-22.5058462,-43.1840331
+Celeste,Centro,"Rua do Lavradio, 11. CentroRio de Janeiro",Italiana,"Rua do Lavradio, Rio de Janeiro, Brazil",-22.9102461,-43.1829993
+Cena Gastronomia,Vila Muqui,"Rua Heitor de Moura Estevão, 468. Vila MuquiTeresópolis",Contemporânea,"Rua Heitor de Moura Estevão, Rio de Janeiro, Brazil",-22.4048938,-42.9670318
+Churrascaria Palace,Copacabana,"Rua Rodolfo Dantas, 16. CopacabanaRio de Janeiro",Churrascaria,"Rua Rodolfo Dantas, Rio de Janeiro, Brazil",-22.7795525,-43.327658
+Coltivi,Botafogo,"Rua Conde de Irajá, 53. BotafogoRio de Janeiro",Contemporânea,"Rua Conde de Irajá, Rio de Janeiro, Brazil",-22.7120548,-43.462672
+Conversa Fiada,Barra da Tijuca,"Av. Lúcio Costa, 1976. Barra da TijucaRio de Janeiro",Contemporânea,"Avenida Lúcio Costa, Rio de Janeiro, Brazil",-23.0131298,-43.3947761
+Costelas na Brasa,Praça da Bandeira,"Rua Barão de Iguatemi, 408. Praça da BandeiraRio de Janeiro",Brasileira,"Rua Barão de Iguatemi, Rio de Janeiro, Brazil",-22.9122461,-43.2133084
+Crema Pizza e Gelato,Icaraí,"Rua Mariz e Barros, 90. IcaraíNiterói",Pizzaria,"Rua Mariz e Barros, Rio de Janeiro, Brazil",-22.9989214,-44.2320185
+Daka Pizza Artesanal,Ipanema,"Rua Gomes Carneiro, 132. IpanemaRio de Janeiro",Pizzaria,"Rua Gomes Carneiro, Rio de Janeiro, Brazil",-22.6669547,-43.255156
+Deck Jardim,Icaraí,"Rua Dr. Leandro Mota, 138. IcaraíNiterói",Variada,"Rua Dr. Leandro Mota, Rio de Janeiro, Brazil",-22.902984,-43.101579
+Delirium Café,Ipanema,"Rua Barão da Torre, 183. IpanemaRio de Janeiro",Variada,"Rua Barão da Torre, Rio de Janeiro, Brazil",-22.6270971,-42.0044768
+Doceria Gabriela Neves,Centro,"Av. Felíciano Sodré, 488. CentroNiterói",Doces,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Don Pig Hamburgueria,Centro,"Av. Felíciano Sodré, 488. CentroNiterói",Hamburgueria,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Donna Tê Terrazzo,Várzea,"Praça Baltazar da Silveira, 65. VárzeaTeresópolis",Italiana,"Praça Baltazar da Silveira, Rio de Janeiro, Brazil",-22.4124201,-42.96577185255828
+Du Bonfim Gourmet,Tijuca,"Rua Conde de Bonfim, 451 - 2° andar. TijucaRio de Janeiro",Brasileira,"Rua Conde de Bonfim, Rio de Janeiro, Brazil",-22.8576717,-42.2576585
+Ella Pizzaria (Jardim Botânico),Jardim Botânico,"Rua Pacheco Leão, 102. Jardim BotânicoRio de Janeiro",Pizzaria,"Rua Pacheco Leão, Rio de Janeiro, Brazil",-22.166129,-43.5809666
+Empório Canabrava,Centro,"Av. Felíciano Sodré, 488. CentroNiterói",Empório,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Encanteria,Icaraí,"Rua Nóbrega, 264. IcaraíNiterói",Contemporânea,"Rua Nóbrega, Rio de Janeiro, Brazil",-22.9027647,-43.1041081
+Escama,Jardim Botânico,"Rua Visc. de Carandaí, 5. Jardim BotânicoRio de Janeiro",Frutos do Mar,"Rua Visc. de Carandaí, Rio de Janeiro, Brazil",-22.9659949,-43.2206132
+Flora,Copacabana,"Rua Alm. Gonçalves, 5. CopacabanaRio de Janeiro",Contemporânea,"Rua Alm. Gonçalves, Rio de Janeiro, Brazil",-22.9799504,-43.1901602
+Frédèric Epicerie,Leme,"Rua Gustavo Sampaio, 802. LemeRio de Janeiro",Variada,"Rua Gustavo Sampaio, Rio de Janeiro, Brazil",-22.5315652,-43.1732161
+Gabriela Gourmet,Jardim Botânico,"Rua Visconde de Carandaí, 2. Jardim BotânicoRio de Janeiro",Contemporânea,"Rua Visconde de Carandaí, Rio de Janeiro, Brazil",-22.9659949,-43.2206132
+Gio Pizzeria Napoletana,São Francisco,"Av. Quintino Bocaiúva, 127. São FranciscoNiterói",Pizzaria,"Avenida Quintino Bocaiúva, Rio de Janeiro, Brazil",-22.9208954,-43.094487
+Gioia Cucina Italiana,Barra da Tijuca,Ilha Da Gigóia. Barra da TijucaRio de Janeiro,Italiana,"Ilha Da Gigóia. Barra da TijucaRio de Janeiro, Rio de Janeiro, Brazil",-23.0023571,-43.3082252
+Giorni Culinária Italiana,Centro,"Av. Felíciano Sodré, 488. CentroNiterói",Italiana,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Guacamole Cocina Mexicana (Freguesia),Freguesia de Jacarepaguá,"Est. do Bananal, 148. Freguesia de JacarepaguáRio de Janeiro",Mexicana,"Est. do Bananal, Rio de Janeiro, Brazil",nan,nan
+Guita Bistrô,Gávea,"Rua José Roberto Macedo Soares, 5. GáveaRio de Janeiro",Bistrô,"Rua José Roberto Macedo Soares, Rio de Janeiro, Brazil",-22.9738639,-43.2274316
+Gurumê,Tijuca,"Av. Maracanã, 987. TijucaRio de Janeiro",Japonesa,"Avenida Maracanã, Rio de Janeiro, Brazil",-22.7513579,-43.4790872
+HOB Hamburgueria,Tijuca,"Rua Mariz e Barros, 184. TijucaRio de Janeiro",Hamburgueria,"Rua Mariz e Barros, Rio de Janeiro, Brazil",-22.9989214,-44.2320185
+HOB Hamburgueria,Botafogo,"Rua Paulo Barreto, 63. BotafogoRio de Janeiro",Hamburgueria,"Rua Paulo Barreto, Rio de Janeiro, Brazil",-22.7103902,-43.4581086
+Hachiko (Barra),Barra da Tijuca,"Av. Erico Veríssimo, 970. Barra da TijucaRio de Janeiro",Japonesa,"Avenida Erico Veríssimo, Rio de Janeiro, Brazil",-23.010411,-43.308371
+Hachiko (Centro),Centro,"Travessa do Paço, 10. CentroRio de Janeiro",Japonesa,"Travessa do Paço, Rio de Janeiro, Brazil",-22.9042238,-43.1734756
+Hafiza Árabe,Copacabana,Rua Domingos Ferreira n⁰ 76. CopacabanaRio de Janeiro,Árabe,"Rua Domingos Ferreira n⁰ 76. CopacabanaRio de Janeiro, Rio de Janeiro, Brazil",-22.9721962,-43.1865848
+Henriqueta,Leblon,Rua Aristides Espinola 131. LeblonRio de Janeiro,Portuguesa,"Rua Aristides Espinola 131. LeblonRio de Janeiro, Rio de Janeiro, Brazil",-22.9866388,-43.2268313
+Herr Pfeffer,Leblon,"Rua Conde Bernadotte, 26. LeblonRio de Janeiro",Alemã,"Rua Conde Bernadotte, Rio de Janeiro, Brazil",nan,nan
+Juliette,Leblon,"Av. Ataulfo de Paiva, 270. LeblonRio de Janeiro",Bistrô,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+Juliette,Barra da Tijuca,"Av. Ayrton Senna, 2150. Barra da TijucaRio de Janeiro",Francesa,"Avenida Ayrton Senna, Rio de Janeiro, Brazil",-23.0054271,-44.3091696
+Kinjo (Copacabana),Copacabana,"Rua Duvivier, 21. CopacabanaRio de Janeiro",Peruana,"Rua Duvivier, Rio de Janeiro, Brazil",-22.9655872,-43.1778627
+Koni (Centro),Centro,"Rua São José, 66. CentroRio de Janeiro",Japonesa,"Rua São José, Rio de Janeiro, Brazil",-22.7800569,-43.2942303
+Kō Bā Izakaya,Ipanema,"Rua Maria Quitéria, 111. IpanemaRio de Janeiro",Japonesa,"Rua Maria Quitéria, Rio de Janeiro, Brazil",-22.8254531,-43.0767814
+La Copa,Copacabana,"Rua Domingos Ferreira, 122. CopacabanaRio de Janeiro",Carnes,"Rua Domingos Ferreira, Rio de Janeiro, Brazil",-22.9721962,-43.1865848
+Layback Park,Recreio dos Bandeirantes,"Rua Fernando Bujones, 66. Recreio dos BandeirantesRio de Janeiro",Brasileira,"Rua Fernando Bujones, Rio de Janeiro, Brazil",nan,nan
+Lilia Bistrô,Centro,"Rua Primeiro de Março, 66. CentroRio de Janeiro",Contemporânea,"Rua Primeiro de Março, Rio de Janeiro, Brazil",-22.8594647,-43.1037083
+Lima Cocina Peruana (Barra Shopping),Barra da Tijuca,"Av. das Américas, 4666. Barra da TijucaRio de Janeiro",Peruana,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Lima Cocina Peruana (Botafogo),Botafogo,"Rua Visc. de Caravelas, 113. BotafogoRio de Janeiro",Peruana,"Rua Visc. de Caravelas, Rio de Janeiro, Brazil",-22.7950897,-43.0160423
+Low Fire American Barbecue,Centro,"Rua da Alfândega, 7. CentroRio de Janeiro",Americana,"Rua da Alfândega, Rio de Janeiro, Brazil",-22.9039686,-43.1846713
+Mad Brew Tap House (Ipanema),Ipanema,"Rua Vinícius de Moraes, 120. IpanemaRio de Janeiro",Petiscos,"Rua Vinícius de Moraes, Rio de Janeiro, Brazil",-22.4604693,-44.4810911
+Mad Garden,Alto,"Rua Tietê, 329. AltoTeresópolis",Variada,"Rua Tietê, Rio de Janeiro, Brazil",-22.43405,-42.9709639
+Mad Spritz,Alto,Rua Tietê 400. AltoTeresópolis,Petiscos,"Rua Tietê 400. AltoTeresópolis, Rio de Janeiro, Brazil",-22.4341363,-42.9761016
+Mad Sushi,Alto,"Av. Alberto Tôrres, 530. AltoTeresópolis",Japonesa,"Avenida Alberto Tôrres, Rio de Janeiro, Brazil",-22.7508699,-42.8295167
+Maguje,Jardim Botânico,"Rua Jardim Botânico, 1003. Jardim BotânicoRio de Janeiro",Brasileira,"Rua Jardim Botânico, Rio de Janeiro, Brazil",-22.4845722,-44.5023543
+Manjericão Casa de Pizza,Alto Teresópolis,"Rua Flávio Bortoluzi de Souza, 314. Alto TeresópolisTeresópolis",Pizzaria,"Rua Flávio Bortoluzi de Souza, Rio de Janeiro, Brazil",-22.4452228,-42.9780606
+Maria e o Boi,Ipanema,"Rua Maria Quitéria, 111. IpanemaRio de Janeiro",Carnes,"Rua Maria Quitéria, Rio de Janeiro, Brazil",-22.8254531,-43.0767814
+Massa Restaurante,Leblon,"Rua Dias Ferreira, 617. LeblonRio de Janeiro",Italiana,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Masserini Osteria di Mare,Ipanema,"Av. Vieira Souto, 320. IpanemaRio de Janeiro",Italiana,"Avenida Vieira Souto, Rio de Janeiro, Brazil",-22.9866762,-43.2007756
+Meza Bar,Humaitá,"Rua Capitão Salomão, 69. HumaitáRio de Janeiro",Brasileira,"Rua Capitão Salomão, Rio de Janeiro, Brazil",-22.9571371,-43.1962066
+Mimô Confeitaria e Bistrô,Itaipava,"Estr. União e Indústria, 11000 - Loja 23 -  Shopping Estação. ItaipavaPetrópolis",Italiana,"Estr. União e Indústria, Rio de Janeiro, Brazil",-22.3451565,-43.1239477
+Mimô Pizzaria Italiana,Itaipava,"Estr. União e Indústria, 11.000 - Loja 102 A e B -  Shopping Estação. ItaipavaPetrópolis",Pizzaria,"Estr. União e Indústria, Rio de Janeiro, Brazil",-22.3451565,-43.1239477
+Misturaria Fina Mezcla,Santa Rosa,"Rua Dr. Sardinha, 127. Santa RosaNiterói",Variada,"Rua Dr. Sardinha, Rio de Janeiro, Brazil",-22.8995377,-43.0994494
+Mitsubá,Leblon,"Av. Ataulfo de Paiva, 270. LeblonRio de Janeiro",Japonesa,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+Mon Papier Café e Bistrô,Leblon,"Av. Ataulfo de Paiva, 313. LeblonRio de Janeiro",Bistrô,"Avenida Ataulfo de Paiva, Rio de Janeiro, Brazil",-22.9848391,-43.2250261
+Montagu,Botafogo,"Rua Mena Barreto, 100. BotafogoRio de Janeiro",Sanduíche,"Rua Mena Barreto, Rio de Janeiro, Brazil",-22.8191738,-43.0208194
+Nabrasa Oro (Camboinhas),Camboinhas,"Av. Professor Carlos Nelson Ferreira dos Santos, 125. CamboinhasNiterói",Brasileira,"Avenida Professor Carlos Nelson Ferreira dos Santos, Rio de Janeiro, Brazil",-22.9517652,-43.0584917
+Nabrasa Oro (Piratininga),Piratininga,"Av. Alm Tamandaré, 657. PiratiningaNiterói",Brasileira,"Avenida Alm Tamandaré, Rio de Janeiro, Brazil",-22.9467441,-43.0578135
+Nando Comida Descolada,Alto,"Av. Oliveira Botelho, 86. AltoTeresópolis",Contemporânea,"Avenida Oliveira Botelho, Rio de Janeiro, Brazil",-22.4417862,-42.9805514
+Nonna Lina,Icaraí,Rua Ator Paulo Gustavo 300. IcaraíNiterói,Sorveteria,"Rua Ator Paulo Gustavo 300. IcaraíNiterói, Rio de Janeiro, Brazil",-22.9112003,-43.106168
+Nonna Lina (Laranjeiras),Laranjeiras,"Rua das Laranjeiras, 371. LaranjeirasRio de Janeiro",Gelateria,"Rua das Laranjeiras, Rio de Janeiro, Brazil",-22.744608,-43.4982942
+O Booze Bar,Lapa,"Av. Mem de Sá, 63. LapaRio de Janeiro",Bar,"Avenida Mem de Sá, Rio de Janeiro, Brazil",-22.413205,-41.8683366
+O Grego,Copacabana,"Rua Siqueira Campos, 18. CopacabanaRio de Janeiro",Grega,"Rua Siqueira Campos, Rio de Janeiro, Brazil",-22.5162711,-44.000002
+OH! Burguers,Icaraí,"Rua Mem de Sá, 64. IcaraíNiterói",Hamburgueria,"Rua Mem de Sá, Rio de Janeiro, Brazil",-22.6410801,-43.4129388
+Ogro Steaks,Botafogo,"Rua São João Batista, 26. BotafogoRio de Janeiro",Hamburgueria,"Rua São João Batista, Rio de Janeiro, Brazil",-22.748222,-43.4342437
+Orzo Pasta Bar,Maracanã,"Rua Mariz e Barros, 1146. MaracanãRio de Janeiro",Italiana,"Rua Mariz e Barros, Rio de Janeiro, Brazil",-22.9989214,-44.2320185
+Pecorino,Barra da Tijuca,"Av. Américas, 4666. Barra da TijucaRio de Janeiro",Italiana,"Avenida Américas, Rio de Janeiro, Brazil",-22.96857,-43.61737655447384
+Peixoto,Leblon,"Rua Conde Bernardotte, 26. LeblonRio de Janeiro",Japonesa,"Rua Conde Bernardotte, Rio de Janeiro, Brazil",nan,nan
+Piccola Fattoria,Recreio dos Bandeirantes,"Rua Professora Luiza Nogueira Gonçalves, 350. Recreio dos BandeirantesRio de Janeiro",Pizzaria,"Rua Professora Luiza Nogueira Gonçalves, Rio de Janeiro, Brazil",-23.0054844,-43.4392507
+Pickles Burger N’ Shakes,Icaraí,"Rua Lopes Trovão, 474 - loja 107. IcaraíNiterói",Hamburgueria,"Rua Lopes Trovão, Rio de Janeiro, Brazil",-22.907092,-43.1123756
+Praça 7 WineBar,Recreio dos Bandeirantes,"Rua Lúcia de Castro Silva, 160. Recreio dos BandeirantesRio de Janeiro",Contemporânea,"Rua Lúcia de Castro Silva, Rio de Janeiro, Brazil",-23.0205713,-43.4630652
+Proa Cozinha bar,Gávea,"Praça Santos Dumont, 120. GáveaRio de Janeiro",Frutos do Mar,"Praça Santos Dumont, Rio de Janeiro, Brazil",-22.50146455,-44.07522764529055
+Quinta da Henriqueta,Jardim Botânico,"Rua Lopes Quintas, 165. Jardim BotânicoRio de Janeiro",Portuguesa,"Rua Lopes Quintas, Rio de Janeiro, Brazil",-22.9632101,-43.2226218
+Raízes Gastrobar,Freguesia de Jacarepaguá,"Estr. dos Três Rios, 470. Freguesia de JacarepaguáRio de Janeiro",Brasileira,"Estr. dos Três Rios, Rio de Janeiro, Brazil",-22.9366039,-43.3341198
+Refúgio Veg,Recreio dos Bandeirantes,"Rua Roberval Cordeiro de Farias, 346. Recreio dos BandeirantesRio de Janeiro",Vegana,"Rua Roberval Cordeiro de Farias, Rio de Janeiro, Brazil",-23.0175314,-43.4571631
+Restaurante ...lá,Secretário,"Estrada do Secretário, km 5,7. SecretárioPetrópolis",Variada,"Estrada do Secretário, Rio de Janeiro, Brazil",-22.3325509,-43.1768784
+Restaurante Nomar,Itaipuaçu,"Av. da Praia, 14302. ItaipuaçuMaricá",Frutos do Mar,"Avenida da Praia, Rio de Janeiro, Brazil",-22.9737186,-42.912703
+Sabrage,Copacabana,"Rua Ronald de Carvalho, 127. CopacabanaRio de Janeiro",Wine Bar,"Rua Ronald de Carvalho, Rio de Janeiro, Brazil",-22.8669263,-42.343111
+Sagrado Mar,Centro,"Av. Felíciano Sodré, 488. CentroNiterói",Frutos do Mar,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Sal & Baunilha,Santa Rosa,"Rua Américo Oberlaender, 21. Santa RosaNiterói",Carnes,"Rua Américo Oberlaender, Rio de Janeiro, Brazil",nan,nan
+Salveco Donuts,Centro,"Av. Felíciano Sodré, 488. CentroNiterói",Doces,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Salí,Leblon,"Rua Dias Ferreira, 78. LeblonRio de Janeiro",Mediterrânea,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Sardinha Taberna (Barra),Barra da Tijuca,"Av. das Américas, 4666. Barra da TijucaRio de Janeiro",Portuguesa,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Sebastián Gastrobar,Gávea,"Rua dos Oitis, 6. GáveaRio de Janeiro",Variada,"Rua dos Oitis, Rio de Janeiro, Brazil",-22.4567333,-43.4662412
+Serrado Vinhos & Bistrô,Laranjeiras,"Rua Gen. Glicério, 364. LaranjeirasRio de Janeiro",Bistrô,"Rua Gen. Glicério, Rio de Janeiro, Brazil",-22.9420237,-43.1916579
+Señor Burrito,Várzea,"Rua Nova Friburgo, 34. VárzeaTeresópolis",Mexicana,"Rua Nova Friburgo, Rio de Janeiro, Brazil",-22.7707664,-43.3084354
+Sheesh!,Barra da Tijuca,"Av. das Américas, 500. Barra da TijucaRio de Janeiro",Hamburgueria,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Sova,Copacabana,"Rua Xavier da Silveira, 34. CopacabanaRio de Janeiro",Padaria Artesanal,"Rua Xavier da Silveira, Rio de Janeiro, Brazil",-22.7911318,-43.309061
+Surreal Gastrobar,Botafogo,"Rua Paulo Barreto, 102. BotafogoRio de Janeiro",Fusion Food,"Rua Paulo Barreto, Rio de Janeiro, Brazil",-22.7103902,-43.4581086
+Sushi Rio,Botafogo,"Rua Lauro Müller, 116. BotafogoRio de Janeiro",Japonesa,"Rua Lauro Müller, Rio de Janeiro, Brazil",-22.7480689,-43.446328
+Só 30 centímetros,Centro,"Av. Felíciano Sodré, 488. CentroNiterói",Pizzaria,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Tasca Miúda,Leblon,"Rua Humberto de Campos, 827. LeblonRio de Janeiro",Portuguesa,"Rua Humberto de Campos, Rio de Janeiro, Brazil",-22.6786615,-43.2398067
+Tasca do Marquês,Barra da Tijuca,"Avenida das Américas, 4666. Barra da TijucaRio de Janeiro",Portuguesa,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Temaki Fry (Barra da Tijuca),Barra da Tijuca,"Av. Olegário Maciel, 71. Barra da TijucaRio de Janeiro",Japonesa,"Avenida Olegário Maciel, Rio de Janeiro, Brazil",-23.0118087,-43.3050462
+Temaki Fry (Pontal),Recreio dos Bandeirantes,"Av. Paulo Tapajós, 4. Recreio dos BandeirantesRio de Janeiro",Japonesa,"Avenida Paulo Tapajós, Rio de Janeiro, Brazil",-23.0312531,-43.4788955
+Tempo Bistrô,Botafogo,"Rua Mena Barreto, 22. BotafogoRio de Janeiro",Contemporânea,"Rua Mena Barreto, Rio de Janeiro, Brazil",-22.8191738,-43.0208194
+Tempêro com Arte,Tijuca,"Rua Pref. Sebastião Teixeira, 262. TijucaTeresópolis",Brasileira,"Rua Pref. Sebastião Teixeira, Rio de Janeiro, Brazil",-22.922962,-43.377635
+Timpanas Gastrobar,Flamengo,Rua Arno Konder. FlamengoRio de Janeiro,Portuguesa,"Rua Arno Konder. FlamengoRio de Janeiro, Rio de Janeiro, Brazil",-22.9305502,-43.1767537
+Tsuki Sushi,Itaipuaçu,"Rua Van Lembergh, Qd 67/Loja 101. ItaipuaçuMaricá",Japonesa,"Rua Van Lembergh, Rio de Janeiro, Brazil",nan,nan
+Umai Sushi,Itaipuaçu,"Avenida Carlos Marighella, 8503. ItaipuaçuMaricá",Japonesa,"Avenida Carlos Marighella, Rio de Janeiro, Brazil",-22.9621571,-42.9914515
+Vasfeijão (Recreio),Recreio dos Bandeirantes,"Rua Min. Aliomar Baleeiro, 645. Recreio dos BandeirantesRio de Janeiro",Brasileira,"Rua Min. Aliomar Baleeiro, Rio de Janeiro, Brazil",nan,nan
+Vendinha,Tijuca,"Rua Pareto, 42. TijucaRio de Janeiro",Brasileira,"Rua Pareto, Rio de Janeiro, Brazil",-22.9220428,-43.2301274
+Venga Bar de Tapas (Ipanema),Ipanema,"Rua Garcia D’Ávila, 147 B. IpanemaRio de Janeiro",Espanhola,"Rua Garcia D’Ávila, Rio de Janeiro, Brazil",-22.9829363,-43.2091512
+Venga Chiringuito (Copacabana),Copacabana,"Av. Atlântica, 3880. CopacabanaRio de Janeiro",Espanhola,"Avenida Atlântica, Rio de Janeiro, Brazil",-22.9754508,-43.1876515
+Venga La Barra (Leblon),Leblon,"Rua Dias Ferreira, 113 B. LeblonRio de Janeiro",Espanhola,"Rua Dias Ferreira, Rio de Janeiro, Brazil",-22.7955341,-43.0269272
+Vero Gelato e Pizza,Ipanema,"Rua Visconde de Pirajá, 229. IpanemaRio de Janeiro",Gelateria,"Rua Visconde de Pirajá, Rio de Janeiro, Brazil",-22.9837404,-43.214208
+Verso Restaurante,Botafogo,"Av. Voluntários da Pátria, 97. BotafogoRio de Janeiro",Brasileira,"Avenida Voluntários da Pátria, Rio de Janeiro, Brazil",-22.9516955,-43.1847089496397
+VidaVino,Centro,"Av. Felíciano Sodré, 48. CentroNiterói",Wine Bar,"Avenida Felíciano Sodré, Rio de Janeiro, Brazil",-22.8807969,-43.1096894
+Vinho & Ponto,Barra da Tijuca,"Av. das Américas, 500. Barra da TijucaRio de Janeiro",Wine Bar,"Avenida das Américas, Rio de Janeiro, Brazil",-23.0104884,-43.5308492
+Vino! (Botafogo),Botafogo,"Rua Nelson Mandela, 100. BotafogoRio de Janeiro",Contemporânea,"Rua Nelson Mandela, Rio de Janeiro, Brazil",-22.6958353,-43.5141434
+Vino! (Copacabana),Copacabana,"Rua Santa Clara, 8. CopacabanaRio de Janeiro",Italiana,"Rua Santa Clara, Rio de Janeiro, Brazil",-22.9262134,-44.398844
+Vino! (Flamengo),Flamengo,"Rua Governador Irineu Bornhausen, s/n. FlamengoRio de Janeiro",Italiana,"Rua Governador Irineu Bornhausen, Rio de Janeiro, Brazil",-22.9304823,-43.1774417
+Vino! (Ipanema),Ipanema,"Rua Aníbal de Mendonça, 55. IpanemaRio de Janeiro",Italiana,"Rua Aníbal de Mendonça, Rio de Janeiro, Brazil",-22.9828334,-43.2112609
+Vino! Cidade Jardim,Jacarepaguá,"Av. Vice Pres. José Alencar, 1350. JacarepaguáRio de Janeiro",Wine Bar,"Avenida Vice Pres. José Alencar, Rio de Janeiro, Brazil",-22.9665192,-43.38669255
+Vitali Gelato (Ipanema Harbour),Ipanema,"Rua Gomes Carneiro, 132. IpanemaRio de Janeiro",Gelateria,"Rua Gomes Carneiro, Rio de Janeiro, Brazil",-22.6669547,-43.255156
+Yayá Comidaria Pop Brasileira,Leme,"Rua Gustavo Sampaio, 361. LemeRio de Janeiro",Brasileira,"Rua Gustavo Sampaio, Rio de Janeiro, Brazil",-22.5315652,-43.1732161
+Zagga Pizza Bar,Copacabana,"Rua Ronald de Carvalho, 265. CopacabanaRio de Janeiro",Pizzaria,"Rua Ronald de Carvalho, Rio de Janeiro, Brazil",-22.8669263,-42.343111
