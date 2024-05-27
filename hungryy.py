@@ -106,14 +106,18 @@ else:
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
 
 # Exibir notificações temporárias
-placeholder = st.empty()
+def exibir_notificacoes():
+    placeholder = st.empty()
 
-with placeholder.container():
-    st.info("Eurico Comilão te adicionou como amigo")
-    time.sleep(3)
-    placeholder.empty()
+    with placeholder.container():
+        st.info("Eurico Comilão te adicionou como amigo")
+        time.sleep(3)
+        placeholder.empty()
 
-with placeholder.container():
-    st.success("Jojo curtiu sua publicação")
-    time.sleep(3)
-    placeholder.empty()
+    with placeholder.container():
+        st.success("Jojo curtiu sua publicação")
+        time.sleep(3)
+        placeholder.empty()
+
+# Chama a função para exibir notificações
+exibir_notificacoes()
