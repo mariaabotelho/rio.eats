@@ -14,7 +14,7 @@ def mostrar_perfil():
         f"""
         <div style="display: flex; align-items: center;">
             <h1 style="margin-right: 10px;">Teteu Pestana</h1>
-            <img src="{profile_image_url}" width="100">
+            <img src="{profile_image_url}" width="120">
         </div>
         """,
         unsafe_allow_html=True
