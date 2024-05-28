@@ -146,10 +146,16 @@ else:
     exibir_notificacao()
 
   
-    titulo_col1, titulo_col2 = st.columns([2, 5])
-    titulo_col1.image(image_url)
-    st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
+     st.markdown(
+        f"""
+        <div style="display: flex; align-items: center;">
+            <img src="{image_url}" width="90" style="margin-right: 10px;">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
+    st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
     
     data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
 
