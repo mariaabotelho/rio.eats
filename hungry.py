@@ -5,26 +5,31 @@ from folium.plugins import MarkerCluster #restaurantes no mapa
 from streamlit_folium import st_folium
 from streamlit_custom_notification_box import custom_notification_box #notificação da propaganda 
 
-image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/cristinho%202.jpg"
-profile_image_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/matheuss.jpg"
-logo_url = "https://raw.githubusercontent.com/mariaabotelho/rio.eats/main/rio%20eats.jpg"
+image_url = "cristinho 2.jpg"
+profile_image_url = "matheuss.jpg"
+logo_url = "rio eats.jpg"
 
 
 if 'captured_images' not in st.session_state: # pra armazenar foto tirada pelo usurário
     st.session_state.captured_images = []
 
-
 def mostrar_perfil():
-    st.markdown(
-        f"""
-        <div style="display: flex; align-items: center;">
-            <h1 style="margin-right: 10px;">Teteu Pestana</h1>
-            <img src="{profile_image_url}" width="100">
-        </div>
-        """,
-        unsafe_allow_html=True #permite a renderização de HTML no Streamlit
-    )
-    st.write("""
+    # st.markdown(
+    #     f"""
+    #     <div style="display: flex; align-items: center;">
+    #         <h1 style="margin-right: 10px;">Teteu Pestana</h1>
+    #         <img src="{profile_image_url}" width="100">
+    #     </div>
+    #     """,
+    #     unsafe_allow_html=True #permite a renderização de HTML no Streamlit
+    # ) MARIA VOCÊ NAO PRECISA INSERIR HTML DIRETO NO STREAMLIT! DÁ PRA FAZER PELO CODIGO!
+    container = st.container(border=True)
+    col_pic, col_name = container.columns([1, 3])
+    col_pic.image(profile_image_url, width=140)
+    col_name.header('Teteu Pestana')
+    col_name.caption('@Teteu_Pestana')
+    col_name.caption('Rio de Janeiro - Brasil')
+    container.write("""
         Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?
     """)
 
@@ -35,24 +40,44 @@ def mostrar_perfil():
         st.subheader("Fotos de Pratos")
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.image("paris 6.jpg", use_column_width=True)
+            with st.expander("@Teteu_Pestana", expanded=True):
+                st.image("paris 6.jpg", use_column_width=True)
+                st.markdown('**Paris 6**')
+                st.write('Crevettes à Bruno Gagliasso')
+                st.caption('👍🏼 151 curtidas')
         with col2:
-            st.image("iraja.jpg", use_column_width=True)
+            with st.expander('@Teteu_Pestana', expanded=True):
+                st.image("iraja.jpg", use_column_width=True)
+                st.markdown('**Irajá Redux**')
+                st.write('Bife de chorizo com creme de espinafre, redux fries e farofa')
+                st.caption('👍🏼 392 curtidas')
         with col3:
-            st.image("mocelin.jpg", use_column_width=True)
+            with st.expander('@Teteu_Pestana', expanded=True):
+                st.image("mocelin.jpg", use_column_width=True)
+                st.markdown('**Mocellin Steakhouse**')
+                st.write('Shoulder steak com pastelzinho 🙏🏻')
+                st.caption('👍🏼 205 curtidas')
         col4, col5 = st.columns(2)
         with col4:
-            st.image("gurume.jpg", use_column_width=True)
+            with st.expander('@Teteu_Pestana', expanded=True):
+                st.image("gurume.jpg", use_column_width=True)
+                st.markdown('**Gurumê**')
+                st.write('Usuzukuri 3 peixes')
+                st.caption('👍🏼 509 curtidas')
         with col5:
-            st.image("casa tua cocina.jpg", use_column_width=True)
+            with st.expander('@Teteu_Pestana', expanded=True):
+                st.image("casa tua cocina.jpg", use_column_width=True)
+                st.markdown('**Casa Tua Cocina**')
+                st.write('Gnocchi com batata, camarões e vieiras')
+                st.caption('👍🏼 442 curtidas')
         
         # widget capturar imagem da webcam
         picture = st.camera_input("Hmm parece estar gostoso.. Tire uma foto da sua comida para registrar!")
         
         # botao pra salvar a imagem capturada
         if picture:
-            if st.button("Salvar imagem"):
-                st.session_state.captured_images.append(picture)
+            btn = st.download_button("Salvar imagem", data=picture, file_name="imagem_comida.png", mime="image/png")
+                # st.session_state.captured_images.append(picture)
         
        
         if st.session_state.captured_images:
@@ -71,7 +96,7 @@ def mostrar_perfil():
     with tab3:
         st.subheader("Interações")
         interacoes = [
-            "@Eurico Comilão te adicionou como amigo",
+            "@Eurico_Comilão te adicionou como amigo",
             "@Doctor_jojo curtiu sua publicação",
             "@Vanessinha salvou sua publicação",
             "@LapaFaminto te adicionou como amigo",
@@ -119,16 +144,18 @@ else:
     exibir_notificacao()
 
     # pra colocar o cristozinho do lado
-    st.markdown(
-        f"""
-        <div style="display: flex; align-items: center;">
-            <h1 style="margin-right: 10px;">RIO EATS</h1>
-            <img src="{image_url}" width="90">
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
+    # st.markdown(
+    #     f"""
+    #     <div style="display: flex; align-items: center;">
+    #         <h1 style="margin-right: 10px;">RIO EATS</h1>
+    #         <img src="{image_url}" width="90">
+    #     </div>
+    #     """,
+    #     unsafe_allow_html=True
+    # )
+    titulo_col1, titulo_col2 = st.columns([2, 5])
+    titulo_col1.title('RIO EATS')
+    titulo_col2.image(image_url, width=90)
     st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
 
     
@@ -154,8 +181,10 @@ else:
     st_folium(m, width=700, height=500)
 
     # info dos restaurantes
+    st.subheader('Restaurantes encontrados:')
     for idx, row in dados_filtrados.iterrows():
         with st.expander(row['NOME']):
+            st.caption(f"**Culinária**: {row['CULINARIA']}")
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
 
