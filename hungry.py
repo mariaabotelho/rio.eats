@@ -5,6 +5,8 @@ from folium.plugins import MarkerCluster #restaurantes no mapa
 from streamlit_folium import st_folium
 from streamlit_custom_notification_box import custom_notification_box #notificação da propaganda 
 
+st.set_page_config(page_title="Rio Eats", page_icon="🍔", initial_sidebar_state="expanded")
+
 image_url = "cristinho 2.jpg"
 profile_image_url = "matheuss.jpg"
 logo_url = "rio eats.jpg"
