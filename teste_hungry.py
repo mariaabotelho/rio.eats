@@ -102,6 +102,16 @@ def mostrar_perfil():
                 unsafe_allow_html=True
             )
 
+
+with st.sidebar:
+    pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
+    st.image(logo_url, use_column_width=True)
+    st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
+    st.caption('Criado por Maria Botelho, Julia Frazão e Luana Pinheiro')
+
+# Substituindo o título por uma imagem
+st.image(app_logo, use_column_width=True)
+
 # função da notificação da propaganda
 def exibir_notificacao():
     styles = {
@@ -120,15 +130,6 @@ def exibir_notificacao():
         key="notificacao_bigode"
     )
 
-with st.sidebar:
-    pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
-    st.image(logo_url, use_column_width=True)
-    st.header('Rio Eats')
-    st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
-    st.caption('Criado por Maria Botelho, Julia Frazão e Luana Pinheiro')
-
-# Substituindo o título por uma imagem
-st.image(app_logo, use_column_width=True)
 
 if pagina == "Perfil":
     mostrar_perfil()
