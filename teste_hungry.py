@@ -109,9 +109,6 @@ with st.sidebar:
     st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
     st.caption('Criado por Maria Botelho, Julia Frazão e Luana Pinheiro')
 
-# Substituindo o título por uma imagem
-st.image(app_logo, use_column_width=True)
-
 # função da notificação da propaganda
 def exibir_notificacao():
     styles = {
@@ -129,6 +126,9 @@ def exibir_notificacao():
         styles=styles,
         key="notificacao_bigode"
     )
+
+# Substituindo o título por uma imagem
+st.image(app_logo, use_column_width=True)
 
 
 if pagina == "Perfil":
