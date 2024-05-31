@@ -137,7 +137,6 @@ else:
     exibir_notificacao()
     
     titulo_col1, titulo_col2 = st.columns([2, 5])
-    titulo_col1.title('RIO EATS')
     titulo_col2.image(image_url, width=90)
     st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
 
