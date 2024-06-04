@@ -152,7 +152,7 @@ else:
     data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
     # filtro com os tipos de culinária
     opcoes_culinaria = data['CULINARIA'].unique()
-    culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default=opcoes_culinaria[:3])
+    culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária:', opcoes_culinaria, default=opcoes_culinaria[:3])
     # filtrar dados com base nos tipos de culinária selecionados
     dados_filtrados = data[data['CULINARIA'].isin(culinaria_selecionada)]
     # criar mapa
