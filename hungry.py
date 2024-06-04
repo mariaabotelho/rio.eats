@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import folium  # cria o mapa
+import folium  # cria o mapas
 from folium.plugins import MarkerCluster  # restaurantes no mapa
 from streamlit_folium import st_folium
 from streamlit_custom_notification_box import custom_notification_box  # notificação da propaganda 
