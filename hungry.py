@@ -9,6 +9,13 @@ def set_style():
     st.markdown(
         """
         <style>
+        .stApp {
+            background: url('fundo.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .css-1d391kg {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
         h1, h2, h3, h4, h5, p, div, span {
             font-family: 'Times New Roman', sans-serif;
         }
@@ -152,7 +159,7 @@ else:
     data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
     # filtro com os tipos de culinária
     opcoes_culinaria = data['CULINARIA'].unique()
-    culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária:', opcoes_culinaria, default=opcoes_culinaria[:3])
+    culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default=opcoes_culinaria[:3])
     # filtrar dados com base nos tipos de culinária selecionados
     dados_filtrados = data[data['CULINARIA'].isin(culinaria_selecionada)]
     # criar mapa
