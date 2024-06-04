@@ -7,7 +7,7 @@ from streamlit_custom_notification_box import custom_notification_box #notifica√
 
 st.set_page_config(page_title="Rio Eats", page_icon="üçî", initial_sidebar_state="expanded")
 
-image_url = "cristinho 2.jpg"
+
 profile_image_url = "matheuss.jpg"
 logo_url = "rio eats.jpg"
 app_logo = "logo rio eats.jpg"  # Caminho da sua logo
