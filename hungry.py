@@ -1,32 +1,21 @@
 import streamlit as st
 import pandas as pd
-import folium #cria o mapa
-from folium.plugins import MarkerCluster #restaurantes no mapa
+import folium  # cria o mapa
+from folium.plugins import MarkerCluster  # restaurantes no mapa
 from streamlit_folium import st_folium
-from streamlit_custom_notification_box import custom_notification_box #notificação da propaganda 
+from streamlit_custom_notification_box import custom_notification_box  # notificação da propaganda 
 
 st.set_page_config(page_title="Rio Eats", page_icon="🍔", initial_sidebar_state="expanded")
-
-image_url = "cristinho 2.jpg"
 
 profile_image_url = "matheuss.jpg"
 logo_url = "rio eats.jpg"
 app_logo = "logo rio eats.jpg"  # Caminho da sua logo
 
-
-if 'captured_images' not in st.session_state: # pra armazenar foto tirada pelo usurário
+if 'captured_images' not in st.session_state:  # para armazenar foto tirada pelo usuário
     st.session_state.captured_images = []
+
 def mostrar_perfil():
-    # st.markdown(
-    #     f"""
-    #     <div style="display: flex; align-items: center;">
-    #         <h1 style="margin-right: 10px;">Teteu Pestana</h1>
-    #         <img src="{profile_image_url}" width="100">
-    #     </div>
-    #     """,
-    #     unsafe_allow_html=True #permite a renderização de HTML no Streamlit
-    # ) MARIA VOCÊ NAO PRECISA INSERIR HTML DIRETO NO STREAMLIT! DÁ PRA FAZER PELO CODIGO!
-    container = st.container(border=True)
+    container = st.container()
     col_pic, col_name = container.columns([1, 3])
     col_pic.image(profile_image_url, width=140)
     col_name.header('Teteu Pestana')
@@ -76,16 +65,15 @@ def mostrar_perfil():
         # widget capturar imagem da webcam
         picture = st.camera_input("Hmm parece estar gostoso.. Tire uma foto da sua comida para registrar!")
         
-        # botao pra salvar a imagem capturada
+        # botão pra salvar a imagem capturada
         if picture:
-            btn = st.download_button("Salvar imagem", data=picture, file_name="imagem_comida.png", mime="image/png")
-                # st.session_state.captured_images.append(picture)
+            st.download_button("Salvar imagem", data=picture, file_name="imagem_comida.png", mime="image/png")
         
-       
         if st.session_state.captured_images:
             st.subheader("Imagens Capturadas")
             for img in st.session_state.captured_images:
                 st.image(img)
+    
     with tab2:
         st.subheader("Top 5 Restaurantes")
         st.write("1. Irajá Redux")
@@ -93,6 +81,7 @@ def mostrar_perfil():
         st.write("3. Mocellin Steakhouse")
         st.write("4. Casa Tua Cocina")
         st.write("5. Paris 6")
+    
     with tab3:
         st.subheader("Interações")
         interacoes = [
@@ -111,7 +100,8 @@ def mostrar_perfil():
                 """,
                 unsafe_allow_html=True
             )
-# função da notificação da propganda
+
+# função da notificação da propaganda
 def exibir_notificacao():
     styles = {
         'material-icons': {'color': 'red'},
@@ -138,28 +128,11 @@ with st.sidebar:
     st.header('Rio Eats')
     st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
     st.caption('Criado por Maria Botelho, Julia Frazão e Luana Pinheiro')
+
 if pagina == "Perfil":
     mostrar_perfil()
 else:
     exibir_notificacao()
-
-    # pra colocar o cristozinho do lado
-    # st.markdown(
-    #     f"""
-    #     <div style="display: flex; align-items: center;">
-    #         <h1 style="margin-right: 10px;">RIO EATS</h1>
-    #         <img src="{image_url}" width="90">
-    #     </div>
-    #     """,
-    #     unsafe_allow_html=True
-    # )
-
-    titulo_col1, titulo_col2 = st.columns([2, 5])
-    titulo_col1.title('RIO EATS')
-    titulo_col2.image(image_url, width=90)
-    titulo_col1.title('RIO EATS') 
-    st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
-
 
     data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
     # filtro com os tipos de culinária
@@ -184,3 +157,4 @@ else:
             st.caption(f"**Culinária**: {row['CULINARIA']}")
             st.markdown(f"**Endereço**: {row['ENDERECO']}")
             st.markdown(f"**Estrelas**: {'⭐' * row['estrelas']}")
+
