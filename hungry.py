@@ -7,9 +7,9 @@ from streamlit_custom_notification_box import custom_notification_box #notifica�
 
 st.set_page_config(page_title="Rio Eats", page_icon="🍔", initial_sidebar_state="expanded")
 
-image_url = "cristinho 2.jpg"
+
 profile_image_url = "matheuss.jpg"
-logo_url = "rio eats.jpg"
+app_logo = "logo rio eats.jpg"  # Caminho da sua logo
 
 
 if 'captured_images' not in st.session_state: # pra armazenar foto tirada pelo usurário
@@ -132,6 +132,8 @@ def exibir_notificacao():
         key="notificacao_bigode"
     )
 
+# Substituindo o título por uma imagem
+st.image(app_logo, use_column_width=True)
 
 with st.sidebar:
     pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
@@ -145,19 +147,9 @@ if pagina == "Perfil":
 else:
     exibir_notificacao()
 
-    # pra colocar o cristozinho do lado
-    # st.markdown(
-    #     f"""
-    #     <div style="display: flex; align-items: center;">
-    #         <h1 style="margin-right: 10px;">RIO EATS</h1>
-    #         <img src="{image_url}" width="90">
-    #     </div>
-    #     """,
-    #     unsafe_allow_html=True
-    # )
+    
     titulo_col1, titulo_col2 = st.columns([2, 5])
-    titulo_col1.title('RIO EATS')
-    titulo_col2.image(image_url, width=90)
+    titulo_col1.title('RIO EATS') 
     st.write('O Rio Eats chegou para deixar mais fácil a sua escolha de restaurante na cidade maravilhosa!')
 
     
