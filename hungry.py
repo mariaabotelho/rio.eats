@@ -24,7 +24,7 @@ def set_style():
         unsafe_allow_html=True
     )
 
-st.set_page_config(page_title="Rio Eats", page_icon="🍔", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Rio Eats", page_icon="🍽️", initial_sidebar_state="expanded")
 
 # Aplicar o estilo definido
 set_style()
