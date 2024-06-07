@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
-import folium  # cria o mapa
-from folium.plugins import MarkerCluster  # restaurantes no mapa
+import folium  # para criar o mapa
+from folium.plugins import MarkerCluster  # para fazer as marcações dos restaurantes no mapa
 from streamlit_folium import st_folium
-from streamlit_custom_notification_box import custom_notification_box  # notificação da propaganda 
+from streamlit_custom_notification_box import custom_notification_box  #para fazer notificação da propaganda 
 
-def set_style():
+def set_style(): #função para estilizar os site
     st.markdown(
         """
         <style>
@@ -24,20 +24,20 @@ def set_style():
         unsafe_allow_html=True
     )
 
-st.set_page_config(page_title="Rio Eats", page_icon="🍽️", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Rio Eats", page_icon="🍽️", initial_sidebar_state="expanded") #ícone do site
 
-# Aplicar o estilo definido
+
 set_style()
 
 profile_image_url = "matheuss.jpg"
 logo_url = "rio eats.jpg"
-app_logo = "logo rio eats.jpg"  # Caminho da sua logo
+app_logo = "logo rio eats.jpg"  
 
 if 'captured_images' not in st.session_state:  # para armazenar foto tirada pelo usuário
     st.session_state.captured_images = []
 
-def mostrar_perfil():
-    container = st.container(border=True)
+def mostrar_perfil(): #função para mostrar o perfil
+    container = st.container(border=True) #container para deixar organizado as informações do usuário
     col_pic, col_name = container.columns([1, 3])
     col_pic.image(profile_image_url, width=140)
     col_name.header('Teteu Pestana')
@@ -47,8 +47,9 @@ def mostrar_perfil():
         Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?
     """)
     
-    tab1, tab2, tab3 = st.tabs(["Publicações", "Top 5 Restaurantes", "Interações"])
-    
+    tab1, tab2, tab3 = st.tabs(["Publicações", "Top 5 Restaurantes", "Interações"]) #com o st.tabs a gente consegue fazer as 'divisões' da área do perfil
+
+    #detalhar cada tab e o que vai ter nela
     with tab1:
         st.subheader("Publicações")
         col1, col2, col3 = st.columns(3)
