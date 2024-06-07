@@ -29,7 +29,7 @@ st.set_page_config(page_title="Rio Eats", page_icon="🍽️", initial_sidebar_s
 
 set_style()
 profile_image_url = "matheuss.jpg"
-logo_url = "rio eats.jpg"
+logo_url = "Rio eats cristo.png"
 app_logo = "logo rio eats.jpg"  
 
 if 'captured_images' not in st.session_state:  # Para armazenar foto tirada pelo usuário
