@@ -19,12 +19,6 @@ def set_style():
         h1, h2, h3, h4, h5, p, div, span {
             font-family: 'Times New Roman', sans-serif;
         }
-        .container {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
         </style>
         """,
         unsafe_allow_html=True
@@ -44,20 +38,15 @@ if 'captured_images' not in st.session_state:  # para armazenar foto tirada pelo
 
 def mostrar_perfil():
     container = st.container()
-    with container:
-        st.markdown(
-            """
-            <div class='container'>
-            <div style="text-align: center;">
-                <img src="matheuss.jpg" width="140" style="border-radius: 50%;"><br>
-                <h2>Teteu Pestana</h2>
-                <p>@Teteu_Pestana</p>
-                <p>Rio de Janeiro - Brasil</p>
-                <p>Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?</p>
-            </div>
-            </div>
-            """, unsafe_allow_html=True)
-
+    col_pic, col_name = container.columns([1, 3])
+    col_pic.image(profile_image_url, width=140)
+    col_name.header('Teteu Pestana')
+    col_name.caption('@Teteu_Pestana')
+    col_name.caption('Rio de Janeiro - Brasil')
+    container.write("""
+        Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?
+    """)
+    
     tab1, tab2, tab3 = st.tabs(["Fotos de Pratos", "Top 5 Restaurantes", "Interações"])
     
     with tab1:
@@ -109,21 +98,12 @@ def mostrar_perfil():
     
     with tab2:
         st.subheader("Top 5 Restaurantes")
-        top_restaurants = [
-            "Irajá Redux",
-            "Gurumê",
-            "Mocellin Steakhouse",
-            "Casa Tua Cocina",
-            "Paris 6"
-        ]
-        for i, restaurant in enumerate(top_restaurants, 1):
-            st.markdown(
-                f"""
-                <div class='container'>
-                <h3>{i}. {restaurant}</h3>
-                </div>
-                """, unsafe_allow_html=True)
-
+        st.write("1. Irajá Redux")
+        st.write("2. Gurumê")
+        st.write("3. Mocellin Steakhouse")
+        st.write("4. Casa Tua Cocina")
+        st.write("5. Paris 6")
+    
     with tab3:
         st.subheader("Interações")
         interacoes = [
@@ -136,7 +116,7 @@ def mostrar_perfil():
         for interacao in interacoes:
             st.markdown(
                 f"""
-                <div class='container'>
+                <div style="border: 1px solid #ddd; padding: 10px; margin: 5px 0; border-radius: 5px; background-color: #f9f9f9;">
                     {interacao}
                 </div>
                 """,
