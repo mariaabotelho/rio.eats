@@ -92,7 +92,7 @@ def mostrar_perfil(): #função para mostrar o perfil
         if picture:
             st.download_button("Salvar imagem", data=picture, file_name="imagem_comida.png", mime="image/png")
         
-        if st.session_state.captured_images:
+        if st.session_state.captured_images: #verifica se há imagens capturadas
             st.subheader("Imagens Capturadas")
             for img in st.session_state.captured_images:
                 st.image(img)
@@ -124,7 +124,7 @@ def mostrar_perfil(): #função para mostrar o perfil
                 </div>
                 """,
                 unsafe_allow_html=True
-            )
+            ) #para deixar cada interação dentro de um balão falso de notificação
 
 # função da notificação da propaganda
 def exibir_notificacao():
@@ -143,7 +143,7 @@ def exibir_notificacao():
         styles=styles,
         key="notificacao_bigode"
     )
-
+#fazendo a side bar, o que vai estar escrito, imagem e a selectbox 
 with st.sidebar:
     pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
     st.image(logo_url, use_column_width=True)
@@ -151,6 +151,7 @@ with st.sidebar:
     st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
     st.caption('Criado por Maria Botelho, Julia Frazão e Luana Pinheiro')
 
+#para nossa logo só mostrar na página do mapa
 if pagina == "Perfil":
     mostrar_perfil()
 else:
@@ -162,8 +163,8 @@ else:
     # filtro com os tipos de culinária
     opcoes_culinaria = data['CULINARIA'].unique()
     culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default=opcoes_culinaria[:3])
-    
-    if not culinaria_selecionada:
+
+    if not culinaria_selecionada: #para não aparecer aquela notificação de erro se a pessoa não escolher nenhuma categoria
         st.warning('Você precisa escolher pelo menos uma opção.')
     else:
         # filtrar dados com base nos tipos de culinária selecionados
@@ -177,7 +178,7 @@ else:
                           popup=f"{row['NOME']} - {row['CULINARIA']}",
                           icon=folium.Icon(color="blue", icon="info-sign")).add_to(marker_cluster)
                           
-        st_folium(m, width=700, height=500)
+        st_folium(m, width=700, height=500) #tamanho do mapa
         # info dos restaurantes
         st.subheader('Restaurantes encontrados:')
         for idx, row in dados_filtrados.iterrows():
