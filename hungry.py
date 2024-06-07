@@ -99,7 +99,7 @@ def mostrar_perfil():
     with tab2:
         container = st.container(border=True)
         col_name = container.columns([1, 3])
-        container.subheader('Top 5 Restaurantes')
+        container.subheader('Top 5 Restaurantes 🏆')
         container.write("""1. Irajá Redux""")
         container.write("""2. Gurumê""")
         container.write("""3. Mocellin Steakhouse""")
