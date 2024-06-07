@@ -10,7 +10,7 @@ def set_style():
         """
         <style>
         .stApp {
-            background: url('fundo.jpeg') no-repeat center center fixed;
+            background: url('paris6.jpg') no-repeat center center fixed;
             background-size: cover;
         }
         .css-1d391kg {
