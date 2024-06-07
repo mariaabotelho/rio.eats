@@ -97,12 +97,14 @@ def mostrar_perfil():
                 st.image(img)
     
     with tab2:
-        st.subheader("Top 5 Restaurantes")
-        st.write("1. Irajá Redux")
-        st.write("2. Gurumê")
-        st.write("3. Mocellin Steakhouse")
-        st.write("4. Casa Tua Cocina")
-        st.write("5. Paris 6")
+        container = st.container(border=True)
+        col_name = container.columns([1, 3])
+        col_name.subheader("Top 5 Restaurantes")
+        col_name.write("1. Irajá Redux")
+        col_name.write("2. Gurumê")
+        col_name.write("3. Mocellin Steakhouse")
+        col_name.write("4. Casa Tua Cocina")
+        col_name.write("5. Paris 6")
     
     with tab3:
         st.subheader("Interações")
