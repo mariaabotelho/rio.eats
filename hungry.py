@@ -47,10 +47,10 @@ def mostrar_perfil():
         Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?
     """)
     
-    tab1, tab2, tab3 = st.tabs(["Fotos de Pratos", "Top 5 Restaurantes", "Interações"])
+    tab1, tab2, tab3 = st.tabs(["Publicações", "Top 5 Restaurantes", "Interações"])
     
     with tab1:
-        st.subheader("Fotos de Pratos")
+        st.subheader("Publicações")
         col1, col2, col3 = st.columns(3)
         with col1:
             with st.expander("@Teteu_Pestana", expanded=True):
