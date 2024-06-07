@@ -37,7 +37,7 @@ if 'captured_images' not in st.session_state:  # para armazenar foto tirada pelo
     st.session_state.captured_images = []
 
 def mostrar_perfil():
-    container = st.container()
+    container = st.container(border=True)
     col_pic, col_name = container.columns([1, 3])
     col_pic.image(profile_image_url, width=140)
     col_name.header('Teteu Pestana')
