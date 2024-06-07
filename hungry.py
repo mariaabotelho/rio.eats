@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
-import folium  # para criar o mapa
-from folium.plugins import MarkerCluster  # para fazer as marcações dos restaurantes no mapa
-from streamlit_folium import st_folium
-from streamlit_custom_notification_box import custom_notification_box  #para fazer notificação da propaganda 
+import folium  # Importa a biblioteca folium para criar o mapa
+from folium.plugins import MarkerCluster  # Para fazer as marcações dos restaurantes no mapa
+from streamlit_folium import st_folium #Para conseguir exibir o mapa folium no streamlit
+from streamlit_custom_notification_box import custom_notification_box  #Para fazer notificação da propaganda 
 
-def set_style(): #função para estilizar os site
+def set_style(): #Função para estilizar os site
     st.markdown(
         """
         <style>
@@ -24,20 +24,19 @@ def set_style(): #função para estilizar os site
         unsafe_allow_html=True
     )
 
-st.set_page_config(page_title="Rio Eats", page_icon="🍽️", initial_sidebar_state="expanded") #ícone do site
+st.set_page_config(page_title="Rio Eats", page_icon="🍽️", initial_sidebar_state="expanded") # Para aparecer o ícone do site na aba
 
 
 set_style()
-
 profile_image_url = "matheuss.jpg"
 logo_url = "rio eats.jpg"
 app_logo = "logo rio eats.jpg"  
 
-if 'captured_images' not in st.session_state:  # para armazenar foto tirada pelo usuário
+if 'captured_images' not in st.session_state:  # Para armazenar foto tirada pelo usuário
     st.session_state.captured_images = []
 
-def mostrar_perfil(): #função para mostrar o perfil
-    container = st.container(border=True) #container para deixar organizado as informações do usuário
+def mostrar_perfil(): #Função para mostrar o perfil
+    container = st.container(border=True) #Container para deixar organizado as informações do usuário
     col_pic, col_name = container.columns([1, 3])
     col_pic.image(profile_image_url, width=140)
     col_name.header('Teteu Pestana')
@@ -47,9 +46,9 @@ def mostrar_perfil(): #função para mostrar o perfil
         Professor de Ciência de Dados durante o dia, explorador de butecos durante a noite. Entre algoritmos e cervejas geladas, eu desvendo os mistérios dos dados e dos petiscos de boteco. Se você quer discutir sobre machine learning ou descobrir o melhor pastel de feira, sou a pessoa certa! No meu tempo livre, estou sempre em busca do próximo buteco perfeito, onde a comida é boa, a cerveja é gelada e a conversa é animada. Vamos juntos nessa jornada gastronômica?
     """)
     
-    tab1, tab2, tab3 = st.tabs(["Publicações", "Top 5 Restaurantes", "Interações"]) #com o st.tabs a gente consegue fazer as 'divisões' da área do perfil
+    tab1, tab2, tab3 = st.tabs(["Publicações", "Top 5 Restaurantes", "Interações"]) #Com o st.tabs a gente consegue fazer as 'divisões' da área do perfil
 
-    #detalhar cada tab e o que vai ter nela
+    #Detalhar cada tab e o que vai ter nela
     with tab1:
         st.subheader("Publicações")
         col1, col2, col3 = st.columns(3)
@@ -85,14 +84,14 @@ def mostrar_perfil(): #função para mostrar o perfil
                 st.write('Gnocchi com batata, camarões e vieiras')
                 st.caption('👍🏼 442 curtidas')
         
-        # widget capturar imagem da webcam
+        # Widget capturar imagem da webcam
         picture = st.camera_input("Hmm parece estar gostoso.. Tire uma foto da sua comida para registrar!")
         
-        # botão pra salvar a imagem capturada
+        # Botão pra salvar a imagem capturada
         if picture:
             st.download_button("Salvar imagem", data=picture, file_name="imagem_comida.png", mime="image/png")
         
-        if st.session_state.captured_images: #verifica se há imagens capturadas
+        if st.session_state.captured_images: #Verifica se há imagens capturadas
             st.subheader("Imagens Capturadas")
             for img in st.session_state.captured_images:
                 st.image(img)
@@ -124,9 +123,9 @@ def mostrar_perfil(): #função para mostrar o perfil
                 </div>
                 """,
                 unsafe_allow_html=True
-            ) #para deixar cada interação dentro de um balão falso de notificação
+            ) #Para deixar cada interação dentro de um balão falso de notificação
 
-# função da notificação da propaganda
+# Função da notificação da propaganda
 def exibir_notificacao():
     styles = {
         'material-icons': {'color': 'red'},
@@ -143,7 +142,7 @@ def exibir_notificacao():
         styles=styles,
         key="notificacao_bigode"
     )
-#fazendo a side bar, o que vai estar escrito, imagem e a selectbox 
+#Fazendo a side bar, o que vai estar escrito, imagem e a selectbox 
 with st.sidebar:
     pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
     st.image(logo_url, use_column_width=True)
@@ -151,7 +150,7 @@ with st.sidebar:
     st.write('O site que conecta amantes da gastronomia de forma moderna e interativa. Encontre restaurantes próximos, registre suas visitas, compartilhe experiências e descubra novos lugares recomendados pela comunidade. Transforme cada refeição em uma aventura gastronômica personalizada.')
     st.caption('Criado por Maria Botelho, Julia Frazão e Luana Pinheiro')
 
-#para nossa logo só mostrar na página do mapa
+#Para nossa logo só mostrar na página do mapa
 if pagina == "Perfil":
     mostrar_perfil()
 else:
@@ -160,26 +159,26 @@ else:
     exibir_notificacao()
 
     data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
-    # filtro com os tipos de culinária
+    # Filtro com os tipos de culinária
     opcoes_culinaria = data['CULINARIA'].unique()
     culinaria_selecionada = st.multiselect('Selecione Tipos de Culinária', opcoes_culinaria, default=opcoes_culinaria[:3])
 
-    if not culinaria_selecionada: #para não aparecer aquela notificação de erro se a pessoa não escolher nenhuma categoria
+    if not culinaria_selecionada: #Para não aparecer aquela notificação de erro se a pessoa não escolher nenhuma categoria
         st.warning('Você precisa escolher pelo menos uma opção.')
     else:
-        # filtrar dados com base nos tipos de culinária selecionados
+        # Filtrar dados com base nos tipos de culinária selecionados
         dados_filtrados = data[data['CULINARIA'].isin(culinaria_selecionada)]
-        # criar mapa
+        # Criar mapa
         m = folium.Map(location=[dados_filtrados['latitude'].mean(), dados_filtrados['longitude'].mean()], zoom_start=12)
         marker_cluster = MarkerCluster().add_to(m)
-        # adicionar marcadores ao mapa
+        # Adicionar marcadores ao mapa
         for idx, row in dados_filtrados.iterrows():
             folium.Marker(location=[row['latitude'], row['longitude']],
                           popup=f"{row['NOME']} - {row['CULINARIA']}",
                           icon=folium.Icon(color="blue", icon="info-sign")).add_to(marker_cluster)
                           
         st_folium(m, width=700, height=500) #tamanho do mapa
-        # info dos restaurantes
+        # Info dos restaurantes
         st.subheader('Restaurantes encontrados:')
         for idx, row in dados_filtrados.iterrows():
             with st.expander(row['NOME']):
