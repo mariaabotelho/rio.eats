@@ -99,12 +99,12 @@ def mostrar_perfil():
     with tab2:
         container = st.container(border=True)
         col_name = container.columns([1, 3])
-        col_name.subheader("Top 5 Restaurantes")
-        col_name.write("1. Irajá Redux")
-        col_name.write("2. Gurumê")
-        col_name.write("3. Mocellin Steakhouse")
-        col_name.write("4. Casa Tua Cocina")
-        col_name.write("5. Paris 6")
+        col_name.subheader('Top 5 Restaurantes')
+        container.write("""1. Irajá Redux""")
+        container.write("""2. Gurumê""")
+        container.write("""3. Mocellin Steakhouse""")
+        container.write("""4. Casa Tua Cocina""")
+        container.write("""5. Paris 6""")
     
     with tab3:
         st.subheader("Interações")
