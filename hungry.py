@@ -10,8 +10,11 @@ def set_style():
         """
         <style>
         .stApp {
-            background: url('paris6.jpg') no-repeat center center fixed;
+            background-image: url('fundo.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             background-size: cover;
+            background-position: center;
         }
         .css-1d391kg {
             background-color: rgba(255, 255, 255, 0.8);
