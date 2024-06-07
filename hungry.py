@@ -141,9 +141,6 @@ def exibir_notificacao():
         key="notificacao_bigode"
     )
 
-# Substituindo o título por uma imagem
-st.image(app_logo, use_column_width=True)
-
 with st.sidebar:
     pagina = st.selectbox("Navegação", ["Mapa", "Perfil"])
     st.image(logo_url, use_column_width=True)
@@ -154,6 +151,8 @@ with st.sidebar:
 if pagina == "Perfil":
     mostrar_perfil()
 else:
+    # Substituindo o título por uma imagem na página do mapa
+    st.image(app_logo, use_column_width=True)
     exibir_notificacao()
 
     data = pd.read_csv('restaurantes_final_limpo_com_estrelas.csv')
