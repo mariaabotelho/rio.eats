@@ -10,7 +10,7 @@ matplotlib
 numpy
 beautifulsoup4
 networkx
-st-gsheets-connection
+#st-gsheets-connection
 streamlit-custom-notification-box
 Pillow
 
